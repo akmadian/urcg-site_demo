@@ -1,0 +1,42 @@
+.about-row {
+    margin-bottom: 5%
+}
+
+.about-editor img {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-editor #collapse-button {
+    display: block;
+    margin: auto;
+}
+
+.about-editor-name {
+    margin-top: .6%;
+    margin-bottom: 1.5%
+}
+
+.about-editor-name h3 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.about-editor-name p {
+    display: block;
+    font-size: .75rem;
+    text-align: center;
+    margin-bottom: 0px;
+    /*
+    text-align: center;
+    font-size: .9em;
+    font-weight: 400;*/
+}
+
+.bulma-help {
+    display: block;
+    font-size: .75rem;
+    margin-top: .25rem;
+}

@@ -7,32 +7,41 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
 
     <script src="scripts/page-functions.js"></script>
     <title>Hello, world!</title>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            $('#site-container').load('home.html');
+            $('#site-container').load('about.html');
         });
      </script> 
   </head>
   <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 35px">
-            <a class="navbar-brand" href="#">urcg-site_demo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">
+                <img src="assets/logo.png" width="30" height="50" class="d-inline-block align-middle" alt="">
+                The Underrepresentation Curriculum Project
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" 
+            aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarText"><br>
+            <div class="collapse navbar-collapse" id="navbarText" style="display: block">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" onclick="set_site_content('home.html')">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" onclick="set_site_content('home.html')">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="set_site_content('blog.html')">Blog</a>
+                        <a class="nav-link" onclick="set_site_content('blog.html')"><b>Get the Curriculum</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="test-file.html">Pricing</a>
+                        <a class="nav-link" onclick="set_site_content('about.html')">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="test-file.html">Blog</a>
                     </li>
                 </ul>
             </div>
