@@ -14,7 +14,7 @@
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            $('#site-container').load('about.html');
+            $('#site-container').load('home.html');
         });
      </script> 
   </head>
@@ -47,9 +47,53 @@
             </div>
         </nav>
         <div id="site-container">
-
+            <!--All site content goes here and is set by jQuery-->
         </div>
-
+    <!-- Footer -->
+        <footer class="page-footer font-small blue pt-4">
+            <div class="container-fluid text-center text-md-left">
+                <div class="row">
+                    <div class="col-5">
+                        <h5 class="text-uppercase">Footer Content</h5>
+                        <p>Here you can use rows and columns to organize your footer content.</p>
+                    </div>
+                    <div class="col">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col">
+                                    <a class="nav-link" onclick="set_site_content('home.html')">Home<span class="sr-only">(current)</span></a>
+                                </div>
+                                <div class="col">
+                                    <a class="nav-link" onclick="set_site_content('home.html')">Get the Curriculum</a>
+                                </div>
+                                <div class="col">
+                                    <a class="nav-link" onclick="set_site_content('home.html')">About Us</a>
+                                </div>
+                                <div class="col">
+                                    <a class="nav-link" onclick="set_site_content('home.html')">Blog</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center py-3">
+                All URC Curriculum is licensed under 
+                <span class="cc-license">
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA
+                    <img src="assets/cc-icons/cc_icon.svg">
+                    <img src="assets/cc-icons/cc-by_icon.svg">
+                    <img src="assets/cc-icons/cc-nc_icon.svg">
+                    <img src="assets/cc-icons/cc-sa_icon.svg">
+                    </a>
+                </span>
+                <p class="bulma-help">
+                    Website Made by Ari Madian
+                    [<a href="https://github.com/akmadian">GitHub</a>]
+                    [<a href="https://www.linkedin.com/in/arimadian/">LinkedIn</a>]
+                </p>
+            </div>
+        </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="scripts/page-functions.js"></script>
