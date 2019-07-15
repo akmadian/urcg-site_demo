@@ -61,4 +61,47 @@ a.nav-link {
 
 footer {
     background-color: #f8f9fa;
+    padding: 1.5% 4% 0% 4%;
+    position: absolute;
+    width: 100%;
+    height: 320px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.footer-nav-links a {
+    cursor: pointer;
+}
+
+.footer-social-link img {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.footer-social-link a {
+    vertical-align: middle;
+    display: inline;
+    padding: .5rem 1rem;
+}
+
+.footer-social-link div {
+    margin: .5rem 1rem;
+    margin-bottom: 1.2rem;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+#site-container {
+    margin-top: 1.5%;
+    margin-bottom: 400px;
+}
+
+.urcg-logo {
+    width: 30px;
+    height: 50px;
+    padding: 1% 2%;
 }

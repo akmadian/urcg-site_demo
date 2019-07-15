@@ -1,28 +1,33 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/styles.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/styles.css">
 
-    <script src="scripts/page-functions.js"></script>
-    <title>Hello, world!</title>
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('#site-container').load('home.html');
-        });
-     </script> 
-  </head>
-  <body>
+        <script src="scripts/page-functions.js"></script>
+        <title>
+            WIP - The Underrepresentation Curriculum Project – A modular, 
+            student-centered curriculum designed to examine and 
+            address equity and inclusion in science.
+        </title>
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#site-container').load('home.html');
+            });
+        </script> 
+    </head>
+    <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 35px">
-            <img src="assets/logo.png" width="30" height="50" class="d-inline-block align-middle" alt="">
+            <img src="assets/logo.png" class="d-inline-block align-middle" width="50" style="margin-right: 20px">
             <a class="navbar-brand" href="#">
-                The Underrepresentation Curriculum Project
+                The Underrepresentation Curriculum Project <br>
+                <p class="bulma-help">A modular, student-centered curriculum designed to<br>examine and address equity and inclusion in science.</p>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" 
             data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" 
@@ -32,16 +37,16 @@
             <div class="collapse navbar-collapse" id="navbarText" style="display: block">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" onclick="set_site_content('home.html')">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" id="nav-home" onclick="set_site_content('home.html')">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="set_site_content('blog.html')"><b>Get the Curriculum</b></a>
+                        <a class="nav-link" id="nav-get" onclick="set_site_content('blog.html')">Get the Curriculum</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" onclick="set_site_content('about.html')">About Us</a>
+                        <a class="nav-link" id="nav-about" onclick="set_site_content('about.html')">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="test-file.html">Blog</a>
+                        <a class="nav-link" id="nav-blog" href="test-file.html">Blog</a>
                     </li>
                 </ul>
             </div>
@@ -50,30 +55,33 @@
             <!--All site content goes here and is set by jQuery-->
         </div>
     <!-- Footer -->
-        <footer class="page-footer font-small blue pt-4">
+        <footer class="footer">
             <div class="container-fluid text-center text-md-left">
                 <div class="row">
-                    <div class="col-5">
-                        <h5 class="text-uppercase">Footer Content</h5>
-                        <p>Here you can use rows and columns to organize your footer content.</p>
+                    <div class="col footer-social-link">
+                        <h5 class="text-uppercase">The Underrepresentation<br>Curriculum Project</h5>
+                        <p class="bulma-help">A modular, student-centered curriculum designed to<br>examine and address equity and inclusion in science.</p>
                     </div>
-                    <div class="col">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col">
-                                    <a class="nav-link" onclick="set_site_content('home.html')">Home<span class="sr-only">(current)</span></a>
-                                </div>
-                                <div class="col">
-                                    <a class="nav-link" onclick="set_site_content('home.html')">Get the Curriculum</a>
-                                </div>
-                                <div class="col">
-                                    <a class="nav-link" onclick="set_site_content('home.html')">About Us</a>
-                                </div>
-                                <div class="col">
-                                    <a class="nav-link" onclick="set_site_content('home.html')">Blog</a>
-                                </div>
-                            </div>
+                    <div class="col footer-social-link">
+                        <b>Contact Us</b><br>
+                        <p>__________</p>
+                        <div>
+                            <img src="assets/slack-logo.png"><a class="nav-link" href="https://urcg.slack.com/">On Slack</a>
                         </div>
+                        <div>
+                            <img src="assets/email-logo.svg"><a class="nav-link" href="mailto:underrepgroup@gmail.com">By Email</a>
+                        </div>
+                        <div>
+                            <img src="assets/twitter-logo.png"><a class="nav-link" href="https://twitter.com/search?f=tweets&q=%23UnderrepSyllabus">On Twitter</a>
+                        </div>
+                    </div>
+                    <div class="col footer-nav-links">
+                        <b>Site Navigation</b><br>
+                        <p>__________</p>
+                        <a class="nav-link" onclick="set_site_content('home.html')">Home</a>
+                        <a class="nav-link" onclick="set_site_content('home.html')">Get the Curriculum</a>
+                        <a class="nav-link" onclick="set_site_content('home.html')">About Us</a>
+                        <a class="nav-link" onclick="set_site_content('home.html')">Blog</a>
                     </div>
                 </div>
             </div>
