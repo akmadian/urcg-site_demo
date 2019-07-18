@@ -23,25 +23,23 @@
         </script> 
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 35px">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
             <img src="assets/logo.png" class="d-inline-block align-middle" width="50" style="margin-right: 20px">
             <a class="navbar-brand" href="#">
                 The Underrepresentation Curriculum Project <br>
                 <p class="bulma-help">A modular, student-centered curriculum designed to<br>examine and address equity and inclusion in science.</p>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" 
-            data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" 
-            aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarText" style="display: block">
-                <ul class="navbar-nav mr-auto">
+            <div class="collapse navbar-collapse w-100 flex-md-column" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto mb-2 mb-md-0">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             The Curriculum
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Get The Curriculum</a>
+                            <a class="dropdown-item" href="get-the-curriculum.html">Get The Curriculum</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Action</a>
                             <a class="dropdown-item" href="#">Another action</a>
@@ -59,6 +57,48 @@
                 </ul>
             </div>
         </nav>
+        <!--
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 35px">
+            <div class="row">
+                <img src="assets/logo.png" class="d-inline-block align-middle" width="30" style="margin-right: 20px">
+                <a class="navbar-brand" href="#">
+                    The Underrepresentation Curriculum Project <br>
+                    <p class="bulma-help">A modular, student-centered curriculum designed to<br>examine and address equity and inclusion in science.</p>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" 
+                aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div><br>
+
+            <div class="row">
+                <div class="collapse navbar-collapse" id="navbarText" style="display: block">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                The Curriculum
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="get-the-curriculum.html">Get The Curriculum</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" id="nav-home" onclick="set_site_content('home.html')">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-about" onclick="set_site_content('about.html')">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-blog" onclick="set_site_content('blog.html')">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>-->
         <div id="site-container">
             <!--All site content goes here and is set by jQuery-->
         </div>
@@ -77,7 +117,7 @@
                             <img src="assets/slack-logo.png"><a class="nav-link" href="https://urcg.slack.com/">On Slack</a>
                         </div>
                         <div>
-                            <img src="assets/email-logo.svg"><a class="nav-link" href="mailto:underrepgroup@gmail.com">By Email</a>
+                            <img src="assets/gmail-logo.png"><a class="nav-link" href="mailto:underrepgroup@gmail.com">By Email</a>
                         </div>
                         <div>
                             <img src="assets/twitter-logo.png"><a class="nav-link" href="https://twitter.com/search?f=tweets&q=%23UnderrepSyllabus">On Twitter</a>
@@ -89,33 +129,37 @@
                     <div class="col footer-nav-links">
                         <b>Site Navigation</b><br>
                         <p>__________</p>
-                        <a class="nav-link" onclick="set_site_content('home.html')">Home</a>
-                        <a class="nav-link" onclick="set_site_content('home.html')">Get the Curriculum</a>
-                        <a class="nav-link" onclick="set_site_content('about.html')">About Us</a>
-                        <a class="nav-link" onclick="set_site_content('blog.html')">Blog</a>
+                        <a class="nav-link" href="#" onclick="set_site_content('home.html')">Home</a>
+                        <a class="nav-link" href="#" onclick="set_site_content('get-the-curriculum.html')">Get the Curriculum</a>
+                        <a class="nav-link" href="#" onclick="set_site_content('about.html')">About Us</a>
+                        <a class="nav-link" href="#" onclick="set_site_content('blog.html')">Blog</a>
                     </div>
-                    <div class="col-2 footer-licenses">
-                        All URC Curriculum is licensed under <br>
-                        <span class="cc-license">
-                            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0
-                            <img src="assets/cc-icons/cc_icon.svg">
-                            <img src="assets/cc-icons/cc-by_icon.svg">
-                            <img src="assets/cc-icons/cc-nc_icon.svg">
-                            <img src="assets/cc-icons/cc-sa_icon.svg">
+                    <div class="col-3">
+                        <b>Licensing Information</b><br>
+                        <p>__________</p>
+                        <div class="footer-licenses">
+                            All URC Curriculum is licensed under <br>
+                            <span class="cc-license">
+                                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0
+                                <img src="assets/cc-icons/cc_icon.svg">
+                                <img src="assets/cc-icons/cc-by_icon.svg">
+                                <img src="assets/cc-icons/cc-nc_icon.svg">
+                                <img src="assets/cc-icons/cc-sa_icon.svg">
+                                </a>
+                            </span> <hr>
+                            <a href="https://github.com/the-urc-project/urcg-site_demo">
+                                This website's source code
                             </a>
-                        </span> <hr>
-                        <a href="https://github.com/the-urc-project/urcg-site_demo">
-                            This website's source code
-                        </a>
-                         is licensed under the 
-                        <a href="https://github.com/the-urc-project/urcg-site_demo/blob/master/LICENSE">
-                            GNU General Public License v3.0
-                        </a> <hr>
-                        <p class="bulma-help footer-dev-credit">
-                            Website Made by Ari Madian
-                            [<a href="https://github.com/akmadian">GitHub</a>]
-                            [<a href="https://www.linkedin.com/in/arimadian/">LinkedIn</a>]
-                        </p>
+                            is licensed under the 
+                            <a href="https://github.com/the-urc-project/urcg-site_demo/blob/master/LICENSE">
+                                GNU General Public License v3.0
+                            </a> <hr>
+                            <p class="bulma-help footer-dev-credit">
+                                Website Made by Ari Madian
+                                [<a href="https://github.com/akmadian">GitHub</a>]
+                                [<a href="https://www.linkedin.com/in/arimadian/">LinkedIn</a>]
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

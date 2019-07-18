@@ -121,7 +121,33 @@ html {
 }
 
 .urcg-logo {
-    width: 30px;
-    height: 50px;
+    width: 20px;
+    height: 30px;
     padding: 1% 2%;
+}
+
+#home-content .col {
+    margin-top: 1.5%;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+#funding-sources {
+    margin-top: 3.5%;
+    margin-bottom: 3.5%;
+}
+
+#funding-sources h3 {
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+}
+
+#funding-sources hr {
+    margin-top: 0px;
+}
+
+#funding-sources .row {
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
