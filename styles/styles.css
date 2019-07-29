@@ -151,3 +151,12 @@ html {
     margin-left: 2%;
     margin-right: 2%;
 }
+
+#other-resources img {
+    max-width: 30%;
+}
+
+#other-resources #other-resources-list {
+    width: 60%;
+    margin: 2.5% auto 0 auto;
+}

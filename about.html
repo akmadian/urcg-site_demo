@@ -1,278 +1,492 @@
-<div class="container">
-    <div class="row about-row">
-        <div class="col-sm about-editor">
-            <img src="assets/headshots/cropped/Chris.jpg">
-            <div class="about-editor-name">
-                <h3>Chris Gosling</h3>
-                <p>(He/ Him/ His)</p>
-                <p>Saranac Lake, NY</p>
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta property="og:title" content="underrep.com - Home"/>
+        <meta property="og:url" content="underrep.com/about"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:description" content="The Underrepresentation Curriculum Project – A modular, 
+        student-centered curriculum designed to examine and 
+        address equity and inclusion in science. - About"/>
+        <meta property="og:image" content="assets/logo.png"/>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/styles.css">
+
+        <script src="scripts/page-functions.js"></script>
+        <title>
+            underrep.com - About
+        </title>
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <img src="assets/logo.png" class="d-inline-block align-middle" width="50" style="margin-right: 20px">
+            <a class="navbar-brand" href="#">
+                The Underrepresentation Curriculum Project <br>
+                <p class="bulma-help">A modular, student-centered curriculum designed to<br>examine and address equity and inclusion in science.</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse w-100 flex-md-column" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto mb-2 mb-md-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            The Curriculum
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="get-the-curriculum.html">Get The Curriculum</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" id="nav-home" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-about" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-blog" href="https://urcg.blogspot.com/">Blog</a>
+                    </li>
+                </ul>
             </div>
-            <div id="collapse-button">
-                <a class="btn btn-primary float-center" data-toggle="collapse" href="#moreabout-chris" role="button" aria-expanded="false" aria-controls="moreabout-chris">
-                    More About Chris
+        </nav>
+        <!--
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 35px">
+            <div class="row">
+                <img src="assets/logo.png" class="d-inline-block align-middle" width="30" style="margin-right: 20px">
+                <a class="navbar-brand" href="#">
+                    The Underrepresentation Curriculum Project <br>
+                    <p class="bulma-help">A modular, student-centered curriculum designed to<br>examine and address equity and inclusion in science.</p>
                 </a>
-                <div class="row">
-                    <div class="col">
-                        <div class="collapse multi-collapse" id="moreabout-chris">
-                            <div class="card card-body">
-                                <b>What type of institution do you teach at?</b>
-                                <p class="bulma-help">Rural Public High School</p>
-                                <b>What subject(s) do you teach?</b>
-                                <p class="bulma-help">Physics, Engineering, and Math</p>
-                                <b>Tell us about why you are involved with the URC project.</b>
-                                <p class="bulma-help">
-                                    I'm working to change the culture of physics to more 
-                                    readily recognize non-dominant students as legitimate 
-                                    members of the community. The URC is the best way I 
-                                    have found to make such changes in my own classroom, 
-                                    and I got involved to help others do the same. 
-                                </p>
-                                <b>Share one interesting non-academic tidbit about yourself.</b>
-                                <p class="bulma-help">
-                                    I enjoy riding bikes, skiing, and climbing.
-                                </p>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" 
+                aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div><br>
+
+            <div class="row">
+                <div class="collapse navbar-collapse" id="navbarText" style="display: block">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                The Curriculum
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="get-the-curriculum.html">Get The Curriculum</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                            </div>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" id="nav-home" onclick="set_site_content('home.html')">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-about" onclick="set_site_content('about.html')">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-blog" onclick="set_site_content('blog.html')">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>-->
+        <div id="site-container">
+            <div class="container">
+                <div class="row about-row">
+                    <div class="col-sm about-editor">
+                        <img src="assets/headshots/cropped/Chris.jpg">
+                        <div class="about-editor-name">
+                            <h3>Chris Gosling</h3>
+                            <p>(He/ Him/ His)</p>
+                            <p>Saranac Lake, NY</p>
+                        </div>
+                        <div class="text-center">
+                            <a class="btn btn-primary float-center" data-toggle="collapse" href="#moreabout-chris" role="button" aria-expanded="false" aria-controls="moreabout-chris">
+                                More About Chris
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="moreabout-chris">
+                                    <div class="card card-body">
+                                        <b>What type of institution do you teach at?</b>
+                                        <p class="bulma-help">Rural Public High School</p>
+                                        <b>What subject(s) do you teach?</b>
+                                        <p class="bulma-help">Physics, Engineering, and Math</p>
+                                        <b>Tell us about why you are involved with the URC project.</b>
+                                        <p class="bulma-help">
+                                            I'm working to change the culture of physics to more 
+                                            readily recognize non-dominant students as legitimate 
+                                            members of the community. The URC is the best way I 
+                                            have found to make such changes in my own classroom, 
+                                            and I got involved to help others do the same. 
+                                        </p>
+                                        <b>Share one interesting non-academic tidbit about yourself.</b>
+                                        <p class="bulma-help">
+                                            I enjoy riding bikes, skiing, and climbing.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm about-editor">
+                        <img src="assets/headshots/cropped/Johan.jpg">
+                        <div class="about-editor-name">
+                            <h3>Johan Tabora</h3>
+                            <p>(He/ Him/ His)</p>
+                            <p>Chicago, IL</p>
+                        </div>
+                        <div class="text-center">
+                            <a class="btn btn-primary" data-toggle="collapse" href="#moreabout-johan" role="button" aria-expanded="false" aria-controls="moreabout-johan">
+                                More About Johan
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="moreabout-johan">
+                                    <div class="card card-body">
+                                        <b>What type of institution do you teach at?</b>
+                                        <p class="bulma-help">Public High School</p>
+                                        <b>What subject(s) do you teach?</b>
+                                        <p class="bulma-help">Physics (9th-grade and AP)</p>
+                                        <b>Tell us about why you are involved with the URC project.</b>
+                                        <p class="bulma-help">
+                                            Equity in physics has always been in my mind seeing how 
+                                            my female students and students of color are the ones 
+                                            who typically struggled and were also the ones who disengaged 
+                                            first and claim that they weren't "physics persons." 
+                                            I read about Moses' curriculum and reached out to him 
+                                            wanting to learn more about what I'm seeing (why there 
+                                            are underrepresented people of color in physics) and 
+                                            how I can address that in the classroom. A few years 
+                                            later, I'm still implementing the curriculum albeit 
+                                            in different but more cohesive ways!
+                                        </p>
+                                        <b>Share one interesting non-academic tidbit about yourself.</b>
+                                        <p class="bulma-help">
+                                            I'm a first generation immigrant (as in FOB albeit 
+                                            more than 20 years ago!) but most people don't think 
+                                            that about me since I have no "accent."
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm about-editor">
+                        <img src="assets/headshots/cropped/abby.jpg">
+                        <div class="about-editor-name">
+                            <h3>Abigail R. Daane</h3>
+                            <p>(She/ Her/ Hers)</p>
+                            <p>Seattle, WA</p>
+                        </div>
+                        <div class="text-center">
+                            <a class="btn btn-primary" data-toggle="collapse" href="#moreabout-abigail" role="button" aria-expanded="false" aria-controls="moreabout-abigail">
+                                More About Abigail
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="moreabout-abigail">
+                                    <div class="card card-body">
+                                        <b>What type of institution do you teach at?</b>
+                                        <p class="bulma-help">Two-year college</p>
+                                        <b>What subject(s) do you teach?</b>
+                                        <p class="bulma-help">Physics, Undergraduate Research, Astronomy</p>
+                                        <b>Tell us about why you are involved with the URC project.</b>
+                                        <p class="bulma-help">
+                                            Abigail is both acutely aware of her privilege as a 
+                                            white person and acknowledges her resulting blind 
+                                            spots. She is continually looking for ways to improve 
+                                            her own actions and dismantle larger structures from 
+                                            which she has benefited greatly at the expense of 
+                                            others. She has been working on ways to bring 
+                                            conversations of equity into the classrooms for several 
+                                            years and is thrilled that the Underrepresentation 
+                                            Curriculum has pooled resources to share with all 
+                                            STEM teachers out there!
+                                        </p>
+                                        <b>Share one interesting non-academic tidbit about yourself.</b>
+                                        <p class="bulma-help">
+                                            Abigail has a passion for dance - almost any kind - 
+                                            and she is currently trying to instill a duel 
+                                            passion for the arts and science in her daughters! 
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="row about-row">
+                    <div class="col-sm about-editor">
+                        <img src="assets/headshots/cropped/andrew.jpg">
+                        <div class="about-editor-name">
+                            <h3>Andrew Morrison</h3>
+                            <p>(He/ Him/ His)</p>
+                            <p>Chicago, IL</p>
+                        </div>
+                        <div class="text-center">
+                            <a class="btn btn-primary" data-toggle="collapse" href="#moreabout-andrew" role="button" aria-expanded="false" aria-controls="moreabout-andrew">
+                                More About Andrew
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="moreabout-andrew">
+                                    <div class="card card-body">
+                                        <b>What type of institution do you teach at?</b>
+                                        <p class="bulma-help">Two-year college</p>
+                                        <b>What subject(s) do you teach?</b>
+                                        <p class="bulma-help">Physics and Astronomy</p>
+                                        <b>Tell us about why you are involved with the URC project.</b>
+                                        <p class="bulma-help">
+                                            I believe that one of my roles as an educator is to 
+                                            help my students think deeply about the process and 
+                                            structures of science. It is important to me that we 
+                                            continually make science a more equitable space for 
+                                            all people to participate and benefit from. I want 
+                                            to be better at doing this in my classroom, and I 
+                                            hope that my involvement with the URC project has 
+                                            helped me reach that goal.
+                                        </p>
+                                        <b>Share one interesting non-academic tidbit about yourself.</b>
+                                        <p class="bulma-help">
+                                            My wife and I have a (currently) four-year son who 
+                                            we are trying to take to every one of the 72 
+                                            playgrounds in our city before he grows out of going 
+                                            to the park with the family. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm about-editor">
+                        <img src="assets/headshots/cropped/dana.jpg">
+                        <div class="about-editor-name">
+                            <h3>Dana Hsi</h3>
+                            <p>(She/ Her/ Hers)</p>
+                            <p>Kirkland, WA</p>
+                        </div>
+                        <div class="text-center">
+                            <a class="btn btn-primary" data-toggle="collapse" href="#moreabout-dana" role="button" aria-expanded="false" aria-controls="moreabout-dana">
+                                More About Dana
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="moreabout-dana">
+                                    <div class="card card-body">
+                                        <b>What type of institution do you teach at?</b>
+                                        <p class="bulma-help">Public 6-12 school</p>
+                                        <b>What subject(s) do you teach?</b>
+                                        <p class="bulma-help">Chemistry</p>
+                                        <b>Tell us about why you are involved with the URC project.</b>
+                                        <p class="bulma-help">
+                                            My educational background completely ignored any 
+                                            issues of diversity. My students deserve to know 
+                                            that people are part of sciences and therefore, 
+                                            who people are is absolutely essential in how 
+                                            they (and we) perform science. 
+                                        </p>
+                                        <b>Share one interesting non-academic tidbit about yourself.</b>
+                                        <p class="bulma-help">
+                                            I always need a craft or project to work on, so 
+                                            I'm learning to crochet.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm about-editor">
+                        <img src="assets/headshots/cropped/danny.jpg">
+                        <div class="about-editor-name">
+                            <h3>Danny Douchette</h3>
+                            <p>(He/ Him/ His)</p>
+                            <p>Pittsburgh, PA</p>
+                        </div>
+                        <div class="text-center">
+                            <a class="btn btn-primary" data-toggle="collapse" href="#moreabout-danny" role="button" aria-expanded="false" aria-controls="moreabout-danny">
+                                More About Danny
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="moreabout-danny">
+                                    <div class="card card-body">
+                                        <b>What type of institution do you teach at?</b>
+                                        <p class="bulma-help">I am currently a PhD student.</p>
+                                        <b>What subject(s) do you teach?</b>
+                                        <p class="bulma-help">Physics</p>
+                                        <b>Tell us about why you are involved with the URC project.</b>
+                                        <p class="bulma-help">
+                                            I used the curriculum in 2015 and 2016 before 
+                                            returning to school to work on a PhD in physics 
+                                            education research. I'm studying equity and inclusion 
+                                            in introductory college lab courses, and am looking 
+                                            forward to getting back to the classroom soon!
+                                        </p>
+                                        <b>Share one interesting non-academic tidbit about yourself.</b>
+                                        <p class="bulma-help">
+                                            The USA is the fourth country I've taught in.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm"></div>
+                    <div class="col-sm about-editor">
+                        <img src="assets/headshots/cropped/rifkin.jpg">
+                        <div class="about-editor-name">
+                            <h3>Moses Rifkin</h3>
+                            <p>(He/ Him/ His)</p>
+                            <p>Seattle, WA</p>
+                        </div>
+                        <div class="text-center">
+                            <a class="btn btn-primary" data-toggle="collapse" href="#moreabout-moses" role="button" aria-expanded="false" aria-controls="moreabout-moses">
+                                More About Moses
+                            </a>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="moreabout-moses">
+                                    <div class="card card-body">
+                                        <b>What type of institution do you teach at?</b>
+                                        <p class="bulma-help">Private high school (I think the preferred term is "independent school", though I usually say private)</p>
+                                        <b>What subject(s) do you teach?</b>
+                                        <p class="bulma-help">Physics</p>
+                                        <b>Tell us about why you are involved with the URC project.</b>
+                                        <p class="bulma-help">
+                                            Because I believe science teachers have a critical 
+                                            role to play in helping students learn about themselves 
+                                            and society and how to improve both, and think the URC 
+                                            offers a powerful way to help them do that.
+                                        </p>
+                                        <b>Share one interesting non-academic tidbit about yourself.</b>
+                                        <p class="bulma-help">
+                                            Winner of multiple National and World Ultimate 
+                                            championships; two-time Washington Ultimate Coach of the Year
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm"></div>
+                </div>
             </div>
         </div>
-        <div class="col-sm about-editor">
-            <img src="assets/headshots/cropped/Johan.jpg">
-            <div class="about-editor-name">
-                <h3>Johan Tabora</h3>
-                <p>(He/ Him/ His)</p>
-                <p>Chicago, IL</p>
-            </div>
-            <a class="btn btn-primary" data-toggle="collapse" href="#moreabout-johan" role="button" aria-expanded="false" aria-controls="moreabout-johan">
-                More About Johan
-            </a>
-            <div class="row">
-                <div class="col">
-                    <div class="collapse multi-collapse" id="moreabout-johan">
-                        <div class="card card-body">
-                            <b>What type of institution do you teach at?</b>
-                            <p class="bulma-help">Public High School</p>
-                            <b>What subject(s) do you teach?</b>
-                            <p class="bulma-help">Physics (9th-grade and AP)</p>
-                            <b>Tell us about why you are involved with the URC project.</b>
-                            <p class="bulma-help">
-                                Equity in physics has always been in my mind seeing how 
-                                my female students and students of color are the ones 
-                                who typically struggled and were also the ones who disengaged 
-                                first and claim that they weren't "physics persons." 
-                                I read about Moses' curriculum and reached out to him 
-                                wanting to learn more about what I'm seeing (why there 
-                                are underrepresented people of color in physics) and 
-                                how I can address that in the classroom. A few years 
-                                later, I'm still implementing the curriculum albeit 
-                                in different but more cohesive ways!
-                            </p>
-                            <b>Share one interesting non-academic tidbit about yourself.</b>
-                            <p class="bulma-help">
-                                I'm a first generation immigrant (as in FOB albeit 
-                                more than 20 years ago!) but most people don't think 
-                                that about me since I have no "accent."
+    <!-- Footer -->
+        <footer class="footer">
+            <div class="container-fluid text-center text-md-left">
+                <div class="row">
+                    <div class="col footer-social-link">
+                        <h5 class="text-uppercase">The Underrepresentation<br>Curriculum Project</h5>
+                        <p class="bulma-help">A modular, student-centered curriculum designed to<br>examine and address equity and inclusion in science.</p>
+                    </div>
+                    <div class="col footer-social-link">
+                        <b>Contact Us</b><br>
+                        <p>__________</p>
+                        <div>
+                            <img src="assets/slack-logo.png"><a class="nav-link" href="https://urcg.slack.com/">On Slack</a>
+                        </div>
+                        <div>
+                            <img src="assets/gmail-logo.png"><a class="nav-link" href="mailto:underrepgroup@gmail.com">By Email</a>
+                        </div>
+                        <div>
+                            <img src="assets/twitter-logo.png"><a class="nav-link" href="https://twitter.com/search?f=tweets&q=%23UnderrepSyllabus">On Twitter</a>
+                        </div>
+                        <div>
+                            <img src="assets/blogger-logo.png"><a class="nav-link" href="#">On Blogger</a>
+                        </div>
+                    </div>
+                    <div class="col footer-nav-links">
+                        <b>Site Navigation</b><br>
+                        <p>__________</p>
+                        <a class="nav-link" href="#" onclick="set_site_content('home.html')">Home</a>
+                        <a class="nav-link" href="#" onclick="set_site_content('get-the-curriculum.html')">Get the Curriculum</a>
+                        <a class="nav-link" href="#" onclick="set_site_content('about.html')">About Us</a>
+                        <a class="nav-link" href="#" onclick="set_site_content('blog.html')">Blog</a>
+                    </div>
+                    <div class="col-2">
+                        <b>Licensing Information</b><br>
+                        <p>__________</p>
+                        <div class="footer-licenses">
+                            All URC Curriculum is licensed under <br>
+                            <span class="cc-license">
+                                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0
+                                    <div>
+                                        <img src="assets/cc-icons/cc_icon.svg">
+                                        <img src="assets/cc-icons/cc-by_icon.svg">
+                                        <img src="assets/cc-icons/cc-nc_icon.svg">
+                                        <img src="assets/cc-icons/cc-sa_icon.svg">
+                                    </div>
+                                </a>
+                            </span> <hr>
+                            <a href="https://github.com/the-urc-project/urcg-site_demo">
+                                This website's source code
+                            </a>
+                            is licensed under the <br>
+                            <a href="https://github.com/the-urc-project/urcg-site_demo/blob/master/LICENSE">
+                                GNU General Public License v3.0
+                            </a> <hr>
+                            <p class="bulma-help footer-dev-credit">
+                                Website Made by Ari Madian
+                                [<a href="https://github.com/akmadian">GitHub</a>]
+                                [<a href="https://www.linkedin.com/in/arimadian/">LinkedIn</a>]
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm about-editor">
-            <img src="assets/headshots/cropped/abby.jpg">
-            <div class="about-editor-name">
-                <h3>Abigail R. Daane</h3>
-                <p>(She/ Her/ Hers)</p>
-                <p>Seattle, WA</p>
-            </div>
-            <a class="btn btn-primary" data-toggle="collapse" href="#moreabout-abigail" role="button" aria-expanded="false" aria-controls="moreabout-abigail">
-                More About Abigail
-            </a>
-            <div class="row">
-                <div class="col">
-                    <div class="collapse multi-collapse" id="moreabout-abigail">
-                        <div class="card card-body">
-                            <b>What type of institution do you teach at?</b>
-                            <p class="bulma-help">Two-year college</p>
-                            <b>What subject(s) do you teach?</b>
-                            <p class="bulma-help">Physics, Undergraduate Research, Astronomy</p>
-                            <b>Tell us about why you are involved with the URC project.</b>
-                            <p class="bulma-help">
-                                Abigail is both acutely aware of her privilege as a 
-                                white person and acknowledges her resulting blind 
-                                spots. She is continually looking for ways to improve 
-                                her own actions and dismantle larger structures from 
-                                which she has benefited greatly at the expense of 
-                                others. She has been working on ways to bring 
-                                conversations of equity into the classrooms for several 
-                                years and is thrilled that the Underrepresentation 
-                                Curriculum has pooled resources to share with all 
-                                STEM teachers out there!
-                            </p>
-                            <b>Share one interesting non-academic tidbit about yourself.</b>
-                            <p class="bulma-help">
-                                Abigail has a passion for dance - almost any kind - 
-                                and she is currently trying to instill a duel 
-                                passion for the arts and science in her daughters! 
-                            </p>
-                        </div>
+            <!--
+            <div class="text-center py-3">
+                <div class="row justify-content-center footer-licenses">
+                    <div class="col-4">
+                        All URC Curriculum is licensed under
+                        <span class="cc-license">
+                            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA
+                            <img src="assets/cc-icons/cc_icon.svg">
+                            <img src="assets/cc-icons/cc-by_icon.svg">
+                            <img src="assets/cc-icons/cc-nc_icon.svg">
+                            <img src="assets/cc-icons/cc-sa_icon.svg">
+                            </a>
+                        </span>
+                    </div>
+                    <div class="col-4">
+                        This website's source code is licensed under the 
+                        <a href="https://github.com/the-urc-project/urcg-site_demo/blob/master/LICENSE">
+                            GNU General Public License v3.0
+                        </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="row about-row">
-        <div class="col-sm about-editor">
-            <img src="assets/headshots/cropped/andrew.jpg">
-            <div class="about-editor-name">
-                <h3>Andrew Morrison</h3>
-                <p>(He/ Him/ His)</p>
-                <p>Chicago, IL</p>
-            </div>
-            <a class="btn btn-primary" data-toggle="collapse" href="#moreabout-andrew" role="button" aria-expanded="false" aria-controls="moreabout-andrew">
-                More About Andrew
-            </a>
-            <div class="row">
-                <div class="col">
-                    <div class="collapse multi-collapse" id="moreabout-andrew">
-                        <div class="card card-body">
-                            <b>What type of institution do you teach at?</b>
-                            <p class="bulma-help">Two-year college</p>
-                            <b>What subject(s) do you teach?</b>
-                            <p class="bulma-help">Physics and Astronomy</p>
-                            <b>Tell us about why you are involved with the URC project.</b>
-                            <p class="bulma-help">
-                                I believe that one of my roles as an educator is to 
-                                help my students think deeply about the process and 
-                                structures of science. It is important to me that we 
-                                continually make science a more equitable space for 
-                                all people to participate and benefit from. I want 
-                                to be better at doing this in my classroom, and I 
-                                hope that my involvement with the URC project has 
-                                helped me reach that goal.
-                            </p>
-                            <b>Share one interesting non-academic tidbit about yourself.</b>
-                            <p class="bulma-help">
-                                My wife and I have a (currently) four-year son who 
-                                we are trying to take to every one of the 72 
-                                playgrounds in our city before he grows out of going 
-                                to the park with the family. 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm about-editor">
-            <img src="assets/headshots/cropped/dana.jpg">
-            <div class="about-editor-name">
-                <h3>Dana Hsi</h3>
-                <p>(She/ Her/ Hers)</p>
-                <p>Kirkland, WA</p>
-            </div>
-            <a class="btn btn-primary" data-toggle="collapse" href="#moreabout-dana" role="button" aria-expanded="false" aria-controls="moreabout-dana">
-                More About Dana
-            </a>
-            <div class="row">
-                <div class="col">
-                    <div class="collapse multi-collapse" id="moreabout-dana">
-                        <div class="card card-body">
-                            <b>What type of institution do you teach at?</b>
-                            <p class="bulma-help">Public 6-12 school</p>
-                            <b>What subject(s) do you teach?</b>
-                            <p class="bulma-help">Chemistry</p>
-                            <b>Tell us about why you are involved with the URC project.</b>
-                            <p class="bulma-help">
-                                My educational background completely ignored any 
-                                issues of diversity. My students deserve to know 
-                                that people are part of sciences and therefore, 
-                                who people are is absolutely essential in how 
-                                they (and we) perform science. 
-                            </p>
-                            <b>Share one interesting non-academic tidbit about yourself.</b>
-                            <p class="bulma-help">
-                                I always need a craft or project to work on, so 
-                                I'm learning to crochet.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm about-editor">
-            <img src="assets/headshots/cropped/danny.jpg">
-            <div class="about-editor-name">
-                <h3>Danny Douchette</h3>
-                <p>(He/ Him/ His)</p>
-                <p>Pittsburgh, PA</p>
-            </div>
-            <a class="btn btn-primary" data-toggle="collapse" href="#moreabout-danny" role="button" aria-expanded="false" aria-controls="moreabout-danny">
-                More About Danny
-            </a>
-            <div class="row">
-                <div class="col">
-                    <div class="collapse multi-collapse" id="moreabout-danny">
-                        <div class="card card-body">
-                            <b>What type of institution do you teach at?</b>
-                            <p class="bulma-help">I am currently a PhD student.</p>
-                            <b>What subject(s) do you teach?</b>
-                            <p class="bulma-help">Physics</p>
-                            <b>Tell us about why you are involved with the URC project.</b>
-                            <p class="bulma-help">
-                                I used the curriculum in 2015 and 2016 before 
-                                returning to school to work on a PhD in physics 
-                                education research. I'm studying equity and inclusion 
-                                in introductory college lab courses, and am looking 
-                                forward to getting back to the classroom soon!
-                            </p>
-                            <b>Share one interesting non-academic tidbit about yourself.</b>
-                            <p class="bulma-help">
-                                The USA is the fourth country I've taught in.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm"></div>
-        <div class="col-sm about-editor">
-            <img src="assets/headshots/cropped/rifkin.jpg">
-            <div class="about-editor-name">
-                <h3>Moses Rifkin</h3>
-                <p>(He/ Him/ His)</p>
-                <p>Seattle, WA</p>
-            </div>
-            <a class="btn btn-primary" data-toggle="collapse" href="#moreabout-moses" role="button" aria-expanded="false" aria-controls="moreabout-moses">
-                More About Moses
-            </a>
-            <div class="row">
-                <div class="col">
-                    <div class="collapse multi-collapse" id="moreabout-moses">
-                        <div class="card card-body">
-                            <b>What type of institution do you teach at?</b>
-                            <p class="bulma-help">Private high school (I think the preferred term is "independent school", though I usually say private)</p>
-                            <b>What subject(s) do you teach?</b>
-                            <p class="bulma-help">Physics</p>
-                            <b>Tell us about why you are involved with the URC project.</b>
-                            <p class="bulma-help">
-                                Because I believe science teachers have a critical 
-                                role to play in helping students learn about themselves 
-                                and society and how to improve both, and think the URC 
-                                offers a powerful way to help them do that.
-                            </p>
-                            <b>Share one interesting non-academic tidbit about yourself.</b>
-                            <p class="bulma-help">
-                                Winner of multiple National and World Ultimate 
-                                championships; two-time Washington Ultimate Coach of the Year
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm"></div>
-    </div>
-</div>
+                <p class="bulma-help footer-dev-credit">
+                    Website Made by Ari Madian
+                    [<a href="https://github.com/akmadian">GitHub</a>]
+                    [<a href="https://www.linkedin.com/in/arimadian/">LinkedIn</a>]
+                </p>
+            </div>-->
+        </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="scripts/page-functions.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
