@@ -11,52 +11,38 @@
         student-centered curriculum designed to examine and 
         address equity and inclusion in science. - Home"/>
         <meta property="og:image" content="assets/logo.png"/>
-
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="styles/styles.css">
-
-        <script src="scripts/page-functions.js"></script>
         <title>
             underrep.com - Home
         </title>
-        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="styles/styles.css">
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            
+            ga('create', 'UA-144733994-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+        <script>
+            $(function(){
+                $("#header-wrapper").load("header.html");
+                $("#footer-wrapper").load("footer.html")
+            })
+        </script>
     </head>
     <body>
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <img src="assets/logo.png" class="d-inline-block align-middle" width="50" style="margin-right: 20px">
-            <a class="navbar-brand" href="#">
-                The Underrepresentation Curriculum Project <br>
-                <p class="bulma-help">A modular, student-centered curriculum designed to<br>examine and address equity and inclusion in science.</p>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse w-100 flex-md-column" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto mb-2 mb-md-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            The Curriculum
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="get-the-curriculum.html">Get The Curriculum</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">What is This?</a>
-                            <a class="dropdown-item" href="#">Why is it Important?</a>
-                        </div>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" id="nav-home" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-about" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-blog" href="https://urcg.blogspot.com/">Blog</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div id="header-wrapper">
+
+        </div>
         <div id="site-container">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="margin: 30px 200px 30px 200px; height: 400px">
                 <div class="carousel-inner">
@@ -93,7 +79,10 @@
                             First, some logistics:  
                             <b>
                                 please fill out 
-                                <a href="https://goo.gl/forms/dP64aqgQXWgNx6Fw2">this quick form.</a>
+                                <a href="https://goo.gl/forms/dP64aqgQXWgNx6Fw2" 
+                                onclick="GASendEvent('new-user-google-form-click')">
+                                    this quick form.
+                                </a>
                             </b>
                             It will immediately give you access to the lessons and 
                             teacher guides, and a link to join our online community 
@@ -101,8 +90,8 @@
                             of who is using our curriculum: we will not spam your 
                             email or share your personal information. You can always 
                             contact us via 
-                            <a href="https://urcg.slack.com/">slack</a> or 
-                            <a href="mailto:underrepgroup@gmail.com">email</a>.
+                            <a href="https://urcg.slack.com/" onclick="GASendEvent('footer_slack-link-click')">slack</a> or 
+                            <a href="mailto:underrepgroup@gmail.com" onclick="GASendEvent('footer_email-link-click')">email</a>.
                         </p>
                     </div>
                 </div>
@@ -124,101 +113,11 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <div class="container-fluid text-center text-md-left">
-                <div class="row">
-                    <div class="col footer-social-link">
-                        <h5 class="text-uppercase">The Underrepresentation<br>Curriculum Project</h5>
-                        <p class="bulma-help">A modular, student-centered curriculum designed to<br>examine and address equity and inclusion in science.</p>
-                    </div>
-                    <div class="col footer-social-link">
-                        <b>Contact Us</b><br>
-                        <p>__________</p>
-                        <div>
-                            <img src="assets/slack-logo.png"><a class="nav-link" href="https://urcg.slack.com/">On Slack</a>
-                        </div>
-                        <div>
-                            <img src="assets/gmail-logo.png"><a class="nav-link" href="mailto:underrepgroup@gmail.com">By Email</a>
-                        </div>
-                        <div>
-                            <img src="assets/twitter-logo.png"><a class="nav-link" href="https://twitter.com/search?f=tweets&q=%23UnderrepSyllabus">On Twitter</a>
-                        </div>
-                        <div>
-                            <img src="assets/blogger-logo.png"><a class="nav-link" href="#">On Blogger</a>
-                        </div>
-                    </div>
-                    <div class="col footer-nav-links">
-                        <b>Site Navigation</b><br>
-                        <p>__________</p>
-                        <a class="nav-link" href="#" onclick="set_site_content('home.html')">Home</a>
-                        <a class="nav-link" href="#" onclick="set_site_content('get-the-curriculum.html')">Get the Curriculum</a>
-                        <a class="nav-link" href="#" onclick="set_site_content('about.html')">About Us</a>
-                        <a class="nav-link" href="https://urcg.blogspot.com/">Blog</a>
-                    </div>
-                    <div class="col-2">
-                        <b>Licensing Information</b><br>
-                        <p>__________</p>
-                        <div class="footer-licenses">
-                            All URC Curriculum is licensed under <br>
-                            <span class="cc-license">
-                                <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA 4.0
-                                    <div>
-                                        <img src="assets/cc-icons/cc_icon.svg">
-                                        <img src="assets/cc-icons/cc-by_icon.svg">
-                                        <img src="assets/cc-icons/cc-nc_icon.svg">
-                                        <img src="assets/cc-icons/cc-sa_icon.svg">
-                                    </div>
-                                </a>
-                            </span> <hr>
-                            <a href="https://github.com/the-urc-project/urcg-site_demo">
-                                This website's source code
-                            </a>
-                            is licensed under the <br>
-                            <a href="https://github.com/the-urc-project/urcg-site_demo/blob/master/LICENSE">
-                                GNU General Public License v3.0
-                            </a> <hr>
-                            <p class="bulma-help footer-dev-credit">
-                                Website Made by Ari Madian
-                                [<a href="https://github.com/akmadian">GitHub</a>]
-                                [<a href="https://www.linkedin.com/in/arimadian/">LinkedIn</a>]
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--
-            <div class="text-center py-3">
-                <div class="row justify-content-center footer-licenses">
-                    <div class="col-4">
-                        All URC Curriculum is licensed under
-                        <span class="cc-license">
-                            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC-BY-NC-SA
-                            <img src="assets/cc-icons/cc_icon.svg">
-                            <img src="assets/cc-icons/cc-by_icon.svg">
-                            <img src="assets/cc-icons/cc-nc_icon.svg">
-                            <img src="assets/cc-icons/cc-sa_icon.svg">
-                            </a>
-                        </span>
-                    </div>
-                    <div class="col-4">
-                        This website's source code is licensed under the 
-                        <a href="https://github.com/the-urc-project/urcg-site_demo/blob/master/LICENSE">
-                            GNU General Public License v3.0
-                        </a>
-                    </div>
-                </div>
-                <p class="bulma-help footer-dev-credit">
-                    Website Made by Ari Madian
-                    [<a href="https://github.com/akmadian">GitHub</a>]
-                    [<a href="https://www.linkedin.com/in/arimadian/">LinkedIn</a>]
-                </p>
-            </div>-->
-        </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="scripts/page-functions.js"></script>
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <div id="footer-wrapper">
+
+        </div>
+        <script src="scripts/page-functions.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

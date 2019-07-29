@@ -116,8 +116,7 @@ html {
 }
 
 #site-container {
-    margin-top: 1.5%;
-    margin-bottom: 300px;
+    margin: 1.5% 15% 15% 400px;
 }
 
 .urcg-logo {
@@ -152,11 +151,66 @@ html {
     margin-right: 2%;
 }
 
-#other-resources img {
-    max-width: 30%;
+#other-resources-list {
+    width: 70%;
+    margin: 2.5% auto 0 auto;
 }
 
-#other-resources #other-resources-list {
-    width: 60%;
-    margin: 2.5% auto 0 auto;
+#other-resources-list img {
+    width: 100%
+}
+
+#other-resources-list .row {
+    margin-bottom: 5%;
+}
+
+#what-is-this {
+    width: 70%;
+    margin: 0 auto 3% auto;
+
+}
+
+#what-is-this p {
+    margin-bottom: .8%
+}
+
+.full-width {
+    margin-left: -47%;
+    margin-right: -40%;
+}
+
+#what-is-this_timelines {
+    margin-top: 4%;
+}
+
+#what-is-this_timelines table {
+    margin-bottom: 5%;
+}
+
+#why-is-it-important {
+    width: 72%;
+    margin: 0 auto;
+}
+
+#why-is-it-important pre {
+    text-align: left;
+    background: #f8f9fa;
+    border-radius: 7px;
+    width: 100%;
+    margin: 2% inherit 1% inherit;
+    padding-top: 1%;
+}
+
+#why-is-it-important hr {
+    width: 100px;
+    color: #000;
+    background-color: #000;
+}
+
+#why-is-it-important ul p {
+    font-weight: 600;
+}
+
+#why-is-it-important ul li {
+    margin-bottom: 1%
 }
