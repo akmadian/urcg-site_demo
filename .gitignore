@@ -1,2 +1,4 @@
 /node_modules/
 *.log
+.vscode/
+src/styles/bulma-mods.css
