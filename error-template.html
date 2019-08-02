@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+            crossorigin="anonymous">
+
+        <title>
+            underrep.com - [ERROR CODE HERE]
+        </title>
+        <style>
+            .centered {
+                width: 50%;
+                margin: 0 auto;
+            }
+
+            .card {
+                border-radius: 8px;
+            }
+
+            hr {
+                width: 100px;
+                color: #4C4C4C;
+                background-color: #4C4C4C;
+            }
+
+            textarea {
+                width: 100%;
+                height: 14em;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container text-center">
+            <div class="card centered" style="margin-top: 30%">
+                <div class="card-body">
+                    <h2 class="card-title">underrep.com</h2>
+                    <h4>[ERROR CODE HERE] - [SMALL EXPLANATION]</h4>
+                    <p class="card-text">
+                        Whoops! Something went wrong. <br>
+                        Try refreshing the page, or try again later.
+                    </p>
+                    <hr>
+                    <p>
+                        If you're feeling helpful, please 
+                        <a href="mailto:akmadian@gmail.com">
+                            email this site's maintainer
+                        </a>, and include this information:
+                    </p>
+                    <textarea disabled>
+HTTP_CODE: [ERROR CODE HERE];                        
+HTTP_REFERER: <!--#echo var="HTTP_REFERER" -->;
+REMOTE_ADDR: <!--#echo var="REMOTE_ADDR" -->;
+REQUEST_URI: <!--#echo var="REQUEST_URI" -->;
+HTTP_HOST: <!--#echo var="HTTP_HOST" -->;
+HTTP_USER_AGENT: <!--#echo var="HTTP_USER_AGENT" -->;
+REDIRECT_STATUS: <!--#echo var="REDIRECT_STATUS" -->;
+                    </textarea>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

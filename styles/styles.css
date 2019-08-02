@@ -1,3 +1,8 @@
+.header img {
+    width: 50px;
+    margin-right: 20px
+}
+
 .about-row {
     margin-bottom: 5%
 }
@@ -174,6 +179,12 @@ html {
     margin-bottom: .8%
 }
 
+#what-is-this hr {
+    width: 100px;
+    color: #000;
+    background-color: #000;
+}
+
 .full-width {
     margin-left: -47%;
     margin-right: -40%;
@@ -213,4 +224,88 @@ html {
 
 #why-is-it-important ul li {
     margin-bottom: 1%
+}
+
+
+@media only screen and (max-width: 1370px) {
+    #site-container {
+        font-size: 14px;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 280px;
+        padding-bottom: 50px;
+    }
+
+    #why-is-it-important pre {
+        width: 125%;
+        margin-left: -12%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    #why-is-it-important pre p {
+        margin-bottom: 0%;
+    }
+
+    #why-is-it-important pre hr {
+        width: 100px;
+        color: #000;
+        background-color: #000;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    #why-is-it-important pre div {
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    footer {
+        background-color: #f8f9fa;
+        padding: 1.5% 4% 0% 4%;
+        position: absolute;
+        width: 100%;
+        height: 280px;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+    }
+
+    #other-resources {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #other-resources-list {
+        width: 100%;
+    }
+
+    #gsheets-charts {
+        width: 130%;
+        margin-left: -15%;
+    }
+
+    #gsheets-charts iframe {
+        width: 600px;
+        height: 400px;
+    }
+
+    #carousel {
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    .header {
+        padding-top: 20px;
+        height: 90px;
+    }
+
+    .header img {
+        width: 40px;
+        margin-right: 20px
+    }
+    
+    .about-editor img {
+        width: 250px;
+    }
 }
