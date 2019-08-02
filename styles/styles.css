@@ -358,7 +358,7 @@ hr {
 
 @media only screen and (max-width: 670px) {
     html {
-        width: 200% !important;
+        width: 100% !important;
     }
 
     #site-container {
