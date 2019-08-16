@@ -1,0 +1,59 @@
+.header img {
+    width: 50px;
+    margin-right: 20px
+}
+
+.urcg-logo {
+    width: 20px;
+    height: 30px;
+    padding: 1% 2%;
+}
+
+@media only screen and (max-width: 1370px) {
+    .header {
+        padding-top: 20px;
+        height: 90px;
+    }
+
+    .header img {
+        width: 40px;
+        margin-right: 20px
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .navbar-brand {
+        font-size: 14px;
+        left: 10px;
+        margin-right: 0px;
+    }
+
+    .navbar-brand p {
+        font-size: 12px;
+        left: 10px;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .navbar-brand {
+        font-size: 14px;
+        left: 10px;
+    }
+
+    .navbar-brand p {
+        font-size: 12px;
+        left: 10px;
+    }
+
+    .navbar {
+        padding-top: 1%;
+        padding-bottom: 1%;
+        margin-bottom: 5%;
+    }
+
+    .urcg-logo {
+        margin-right: 1px !important;
+        height: 50px;
+        width: 50px !important;
+    }
+}

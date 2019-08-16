@@ -1,16 +1,7 @@
-.header img {
-    width: 50px;
-    margin-right: 20px
-}
-
 .about-row {
     margin-bottom: 5%;
-    margin-left: -13%;
+    margin-left: -12.5%;
     width: 125%
-}
-
-.centered {
-    margin: 0 auto;
 }
 
 .about-editor img {
@@ -56,75 +47,42 @@ a.nav-link {
     margin-top: .25rem;
 }
 
-.cc-license a {
-    text-decoration: none;
+.slick-prev::before, .slick-next::before {
+    color: darkgray;
 }
 
-.cc-license img {
+#facts-carousel-wrapper {
+    margin-top: 1.5%;
+    margin-bottom: 5%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#facts-carousel-wrapper h4 {
+    position: relative;
+    left: 42%;
+    margin-bottom: 1.5%;
+}
+
+.facts-carousel {
+    /*background-color: aqua;*/
+    height: 100px;
+}
+
+.facts-carousel .col {
+    margin-top: .5%;
+}
+
+.facts-carousel .row {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.facts-carousel img {
     vertical-align: middle;
-    width: 20px;
-    opacity: 0.7;
-    filter: alpha(opacity=70); /* msie */
-}
-
-.cc-license:hover img {
-    vertical-align: middle;
-    width: 20px;
-    opacity: 1;
-    filter: alpha(opacity=100); /* msie */
-}
-
-footer {
-    background-color: #f8f9fa;
-    padding: 1.5% 4% 0% 4%;
-    position: absolute;
-    width: 100%;
-    height: 290px;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-}
-
-footer hr {
-    width: 100%;
-    color: #eee;
-    background-color: #eee;
-}
-
-.footer-licenses {
-    font-size: 12px;
-}
-
-.footer-licenses a {
-    font-size: 12px;
-}
-
-.footer-nav-links a {
-    cursor: pointer;
-}
-
-.footer-social-link img {
-    width: 20px;
-    vertical-align: middle;
-}
-
-.footer-social-link a {
-    vertical-align: middle;
-    display: inline;
-    padding: .5rem 1rem;
-}
-
-.footer-social-link div {
-    margin: .5rem 1rem;
-    margin-bottom: 1rem;
-}
-
-.footer-dev-credit {
-    font-size: 10px;
-}
-
-.footer-dev-credit a {
-    font-size: 10px;
+    margin-right: 0px;
+    width: 90px;
+    height: 90px;
 }
 
 html {
@@ -146,13 +104,10 @@ hr {
 }
 
 #site-container {
-    margin: 1.5% 15% 15% 400px;
-}
-
-.urcg-logo {
-    width: 20px;
-    height: 30px;
-    padding: 1% 2%;
+    margin-top: 1.5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 400px; 
 }
 
 #home-content .col {
@@ -262,6 +217,16 @@ hr {
     margin-bottom: 2%;
 }
 
+#gsheets-charts {
+    width: 130%;
+    margin-left: -9%;
+}
+
+#gsheets-charts iframe {
+    width: 100%;
+    height: 400px;
+}
+
 @media only screen and (max-width: 1370px) {
     #site-container {
         font-size: 14px;
@@ -292,17 +257,6 @@ hr {
         margin: 0 auto;
     }
 
-    footer {
-        background-color: #f8f9fa;
-        padding: 1.5% 4% 0% 4%;
-        position: absolute;
-        width: 100%;
-        height: 280px;
-        left: 0;
-        bottom: 0;
-        overflow: hidden;
-    }
-
     #other-resources {
         width: 70%;
         margin: 0 auto;
@@ -328,19 +282,22 @@ hr {
         width: 100%;
         margin-bottom: 2%;
     }
-
-    .header {
-        padding-top: 20px;
-        height: 90px;
-    }
-
-    .header img {
-        width: 40px;
-        margin-right: 20px
-    }
     
     .about-editor img {
         width: 250px;
+    }
+
+    #facts-carousel-wrapper {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 3%;
+        margin-bottom: 8%;
+    }
+    
+    #facts-carousel-wrapper h4 {
+        position: relative;
+        left: 28%;
+        margin-bottom: 3.5%;
     }
 }
 
@@ -362,8 +319,13 @@ hr {
     }
 
     #site-container {
-        width: 100%;
-        margin-left: 3%;
-        margin-right: 3%
+        width: 94%;
+        margin-top: 100%;
+        margin: 0 auto;
+        margin-bottom: 750px;
+    }
+
+    .phone-hidden {
+        display: none;
     }
 }

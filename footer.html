@@ -1,49 +1,67 @@
+<link rel="stylesheet" href="styles/footer.css">
+
 <footer class="footer">
     <div class="container-fluid text-center text-md-left">
         <div class="row">
-            <div class="col col-sm-3 footer-social-link">
+            <div class="col-lg-3 col-sm-12 footer-social-link">
                 <h5 class="text-uppercase">The Underrepresentation<br>Curriculum Project</h5>
                 <p class="bulma-help">A modular, student-centered curriculum designed to<br>examine and address equity and inclusion in science.</p>
             </div>
-            <div class="col col-sm-3 footer-social-link">
+            <div class="col-lg-3 col-sm-12 footer-social-link footer-section">
                 <b>Contact Us</b><br>
-                <p>__________</p>
-                <div>
-                    <a class="nav-link" href="https://urcg.slack.com/" onclick="GASendEvent('footer_slack-link-click')">
-                        <img src="assets/slack-logo.png">&nbsp;
-                        On Slack
-                    </a>
+                <p class="footer-hr-sm">__________</p>
+                <div class="row no-gutters">
+                    <div class="col-6 col-md-12">
+                        <a class="nav-link" href="https://urcg.slack.com/" onclick="GASendEvent('footer_slack-link-click')">
+                            <img src="assets/slack-logo.png">&nbsp;
+                            On Slack
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-12">
+                        <a class="nav-link" href="mailto:underrepgroup@gmail.com" onclick="GASendEvent('footer_email-link-click')">
+                            <img src="assets/gmail-logo.png">&nbsp;
+                            By Email
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <a class="nav-link" href="mailto:underrepgroup@gmail.com" onclick="GASendEvent('footer_email-link-click')">
-                        <img src="assets/gmail-logo.png">&nbsp;
-                        By Email
-                    </a>
-                </div>
-                <div>
-                    <a class="nav-link" href="https://twitter.com/search?f=tweets&q=%23UnderrepSyllabus" onclick="GASendEvent('footer_twitter-link-click')">
-                        <img src="assets/twitter-logo.png">&nbsp;
-                        On Twitter
-                    </a>
-                </div>
-                <div>
-                    <a class="nav-link" href="https://urcg.blogspot.com/" onclick="GASendEvent('footer_blogger-link-click')">
-                        <img src="assets/blogger-logo.png">&nbsp;
-                        On Blogger
-                    </a>
+                <div class="row no-gutters">
+                    <div class="col-6 col-md-12">
+                        <a class="nav-link" href="https://twitter.com/search?f=tweets&q=%23UnderrepSyllabus" onclick="GASendEvent('footer_twitter-link-click')">
+                            <img src="assets/twitter-logo.png">&nbsp;
+                            On Twitter
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-12">
+                        <a class="nav-link" href="https://urcg.blogspot.com/" onclick="GASendEvent('footer_blogger-link-click')">
+                            <img src="assets/blogger-logo.png">&nbsp;
+                            On Blogger
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="col col-sm-3 footer-nav-links">
+            <div class="col-lg-3 col-sm-12 footer-nav-links footer-section">
                 <b>Site Navigation</b><br>
-                <p>__________</p>
-                <a class="nav-link" href="index.html" onclick="GASendEvent('nav_click-home')">Home</a>
-                <a class="nav-link" href="get.html" onclick="GASendEvent('nav_click-curriculum')">Get the Curriculum</a>
-                <a class="nav-link" href="about.html" onclick="GASendEvent('nav_click-about')">About Us</a>
-                <a class="nav-link" href="https://urcg.blogspot.com/" onclick="GASendEvent('nav_click-blog')">Blog</a>
+                <p class="footer-hr-sm">__________</p>
+                <div class="row">
+                    <div class="col-5 col-md-12">
+                        <a class="nav-link" href="index.html" onclick="GASendEvent('nav_click-home')">Home</a>
+                    </div>
+                    <div class="col-7 col-md-12">
+                        <a class="nav-link" href="get.html" onclick="GASendEvent('nav_click-curriculum')">Get the Curriculum</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-md-12">
+                        <a class="nav-link" href="about.html" onclick="GASendEvent('nav_click-about')">About Us</a>
+                    </div>
+                    <div class="col col-md-12">
+                        <a class="nav-link" href="https://urcg.blogspot.com/" onclick="GASendEvent('nav_click-blog')">Blog</a>    
+                    </div>
+                </div>
             </div>
-            <div class="col-2 col-sm-3">
+            <div class="col-12 col-sm-3 footer-section" id="footer-license-info">
                 <b>Licensing Information</b><br>
-                <p>__________</p>
+                <p class="footer-hr-sm">__________</p>
                 <div class="footer-licenses">
                     All URC Curriculum is licensed under <br>
                     <span class="cc-license">
