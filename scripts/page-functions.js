@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('.facts-carousel').slick({
+    $(".facts-carousel").slick({
         autoplay: true,
         accessibility: true,
         dots: true
@@ -7,9 +7,9 @@ $(document).ready(function(){
 });
 
 function GASendEvent(eventLabel) {
-    console.log('Sending event hit...')
-    ga('send', {
-        hitType: 'event',
+    console.log("Sending event hit...")
+    ga("send", {
+        hitType: "event",
         eventLabel: eventLabel
     })
 }
