@@ -103,9 +103,12 @@ hr {
 }
 
 #site-container {
-    margin-top: 1.5%;
+    /*
     margin-right: 10%;
-    margin-left: 10%;
+    margin-left: 10%;*/
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 1.5%;
     margin-bottom: 400px; 
 }
 
@@ -251,8 +254,8 @@ hr {
 @media only screen and (max-width: 1370px) {
     #site-container {
         font-size: 14px;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 7%;
+        margin-right: 7%;
         margin-bottom: 280px;
         padding-bottom: 50px;
     }
@@ -366,6 +369,21 @@ hr {
         height: 90px;
     }
 
+    #get-card-container {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    #get-card-container h1.card-title {
+        font-size: 30px;
+    }
+
+    #get-card-container p {
+        width: 100%;
+        float: none;
+        margin: 0 auto 1em auto;
+    }
+
     #unit-subsections {
         width: 125%;
         margin: 1rem auto 1rem -18%;
@@ -435,16 +453,6 @@ hr {
     .about-editor img {
         width: 75%;
         margin: 0 auto;
-    }
-
-    #get-card-container h1.card-title {
-        font-size: 30px;
-    }
-
-    #get-card-container p {
-        width: 90%;
-        float: none;
-        margin: 0 auto 1em auto;
     }
 
     #other-resources-list img {
