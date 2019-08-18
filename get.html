@@ -45,10 +45,10 @@
 
         </div>
         <div id="site-container">
-            <div class="card text-center" style="float: none; margin: 0 auto 2% auto;">
+            <div class="card text-center" id="get-card-container">
                 <div class="card-body">
                     <h1 class="card-title">Get the Curriculum</h1>
-                    <p style="width: 60%; float: none; margin: 0 auto 1em auto;">
+                    <p>
                         All we ask in exchange for the curriculum is that you fill out a quick form.
                         It will immediately give you access to the lessons and teacher guides, 
                         and a link to join our online community of teachers. We collect this 
@@ -72,7 +72,7 @@
                 </div>
                 <div id="other-resources-list">
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-12 col-md-3">
                             <a href="https://engage.aps.org/stepup/home" onclick="GASendEvent('stepup-link-click')">
                                 <img src="assets/stepup-logo.svg">
                             </a>
@@ -90,7 +90,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-12 col-md-3">
                             <a href="https://www.tolerance.org/" onclick="GASendEvent('tt-website-click')">
                                 <img src="assets/tt-logo.png">
                             </a>
@@ -122,13 +122,172 @@
                 </p>
                 <p>
                     Since different teachers have different needs, time and interests, the curriculum is designed so that 
-                    <b>you can easily choose the parts that will work for you</b> and <b>modify them to suit your needs.</b>
+                    <b>you can easily choose the parts that will work for you</b> and <b>modify them to suit your needs.</b> 
+                    The unit has three subsections:
                 </p>
+                <div id="unit-subsections" style="text-align: left">
+                    <div id="unit-subsections-embarkation">
+                        <ol type="I">
+                            <li>
+                                <div class="row">
+                                    <div class="col-12 col-md-8">
+                                        <b>Embarkation: Laying the Foundation</b>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        Resources
+                                    </div>
+                                </div>
+                                <ol type="A">
+                                    <li>Learning about Scientists Lives</li>
+                                    <li>Data Analysis: Under-Representation</li>
+                                    <li>Is Science Subjective?</li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                Why Does Representation Matter?
+                                            </div>
+                                            <div class="col-6">
+                                                "What Unique Perspective...?"
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-12 col-md-8">
+                                        <b>Fueling: Gaining Relevant Knowledge</b>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        Resources
+                                    </div>
+                                </div>
+                                <ol type="A">
+                                    <li>Meritocracy</li>
+                                    <li>Stereotype Threat</li>
+                                    <li>
+                                        <div class="row">
+                                            <div class="col-4 col-lg-3">
+                                                Systemic Racism
+                                            </div>
+                                            <div class="col-4 col-lg-3">
+                                                Systemic Sexism
+                                            </div>
+                                            <div class="col-4 col-lg-6">
+                                                "Over-Representation" [Coming Soon!]
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>Privilege and Affirmative Action</li>
+                                    <li>Political Correctness [Coming Soon!]</li>
+                                    <li>Implicit bias</li>
+                                    <li>Intersectionality</li>
+                                    <li>Model Minority Myth</li>
+                                </ol>
+                            </li>
+                            <li>
+                                <div class="row">
+                                    <div class="col-12 col-md-8">
+                                        <b>Ignition: Turning Knowledge Into Action</b>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        Resources
+                                    </div>
+                                </div>
+                                <ol type="A">
+                                    <li>Students Taking Action</li>
+                                </ol>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
                 <hr>
-                <div id="what-is-this_timelines">
+                <div id="what-is-this_timelines-mobile">
                     <p>Here, for example, are two different implementations from two different users of the curriculum.</p>
                     <table class="table">
-                        <thead>
+                        <tbody>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Lesson</th>
+                                <th scope="col">Homework</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Before</th>
+                                <td>Norm Development</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Day 1</th>
+                                <td>Subjectivity in Science, Why Does Representation Matter?</td>
+                                <td>Read Responses to Roberts</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Day 2</th>
+                                <td>Data Analysis, Hypothesizing About Gender Underrepresentation</td>
+                                <td>Taking the IAT & Reading About Stereotype Threat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Day 3</th>
+                                <td>Implicit Bias, Taking Action</td>
+                                <td>Evaluations</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Lesson</th>
+                                <th scope="col">Homework</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Before</th>
+                                <td></td>
+                                <td>Introduction</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Day 1</th>
+                                <td>Data Analysis, Hypothesizing</td>
+                                <td>Exploring Hypotheses</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Day 2</th>
+                                <td>Meritocracy, Stereotype Threat</td>
+                                <td>Exploring Hypotheses</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Day 3</th>
+                                <td>Systemic Racism</td>
+                                <td>Reading</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Day 4</th>
+                                <td>Privilege, Affirmative Action</td>
+                                <td>Reading</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Day 5</th>
+                                <td>Implicit Bias</td>
+                                <td>Taking the IAT</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Day 6</th>
+                                <td>Taking Action</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Day 7</th>
+                                <td>Intersectionality</td>
+                                <td>Evaluations</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="what-is-this_timelines-desktop">
+                    <p>Here, for example, are two different implementations from two different users of the curriculum.</p>
+                    <table class="table">
+                        <tbody>
                             <tr>
                                 <th scope="col"></th>
                                 <th scope="col">Before</th>
@@ -136,8 +295,6 @@
                                 <th scope="col">Day 2</th>
                                 <th scope="col">Day 3</th>
                             </tr>
-                        </thead>
-                        <tbody>
                             <tr>
                                 <th scope="row">Lesson</th>
                                 <td>Norm Development</td>
@@ -155,7 +312,7 @@
                         </tbody>
                     </table>
                     <table class="table">
-                        <thead>
+                        <tbody>
                             <tr>
                                 <th scope="col"></th>
                                 <th scope="col">Before</th>
@@ -167,8 +324,6 @@
                                 <th scope="col">Day 6</th>
                                 <th scope="col">Day 7</th>
                             </tr>
-                        </thead>
-                        <tbody>
                             <tr>
                                 <th scope="row">Lesson</th>
                                 <td></td>
