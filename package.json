@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The new and improved underrep.com!",
   "scripts": {
-    "build-css": "node-sass --omit-source-map-url ./styles/sass/bulma-mods.scss ./styles/npm-mods.css"
+    "build-css": "node-sass --omit-source-map-url ./styles/sass/bootstrap.scss ./styles/bootstrap.css"
   },
   "repository": {
     "type": "git",

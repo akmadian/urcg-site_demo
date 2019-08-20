@@ -1,7 +1,13 @@
+.header-logo {
+    display: block;
+    width: 4.5%;
+    margin-right: 1%;
+}
+
 .about-row {
     margin-bottom: 5%;
     margin-left: -12.5%;
-    width: 125%
+    width: 125%;
 }
 
 .about-editor img {
@@ -17,8 +23,8 @@
 }
 
 .about-editor-name {
-    margin-top: .6%;
-    margin-bottom: 1.5%
+    margin-top: 0.6%;
+    margin-bottom: 1.5%;
 }
 
 .about-editor-name h3 {
@@ -28,26 +34,25 @@
 
 .about-editor-name p {
     display: block;
-    font-size: .75rem;
+    font-size: 0.75rem;
     text-align: center;
     margin-bottom: 0px;
-    /*
+/*
     text-align: center;
     font-size: .9em;
     font-weight: 400;*/
 }
 
-a.nav-link {
-    cursor: pointer;
-}
+a.nav-link { cursor: pointer; }
 
 .bulma-help {
     display: block;
-    font-size: .75rem;
-    margin-top: .25rem;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
 }
 
-.slick-prev::before, .slick-next::before {
+.slick-prev::before,
+.slick-next::before {
     color: darkgray;
 }
 
@@ -64,12 +69,12 @@ a.nav-link {
 }
 
 .facts-carousel {
-    /*background-color: aqua;*/
+/*background-color: aqua;*/
     height: 100px;
 }
 
 .facts-carousel .col {
-    margin-top: .5%;
+    margin-top: 0.5%;
 }
 
 .facts-carousel .row {
@@ -103,13 +108,13 @@ hr {
 }
 
 #site-container {
-    /*
+/*
     margin-right: 10%;
     margin-left: 10%;*/
     max-width: 1500px;
     margin: 0 auto;
     margin-top: 1.5%;
-    margin-bottom: 400px; 
+    margin-bottom: 320px;
 }
 
 #home-content .col {
@@ -119,13 +124,14 @@ hr {
 }
 
 #funding-sources {
-    margin-top: 3.5%;
-    margin-bottom: 3.5%;
+    width: 60%;
+    margin: 0 auto;
 }
 
-#funding-sources h3 {
+#funding-sources b {
     margin-top: 1.5%;
-    margin-bottom: 2%;
+    margin-bottom: 1.5%;
+    font-size: 22px;
 }
 
 #funding-sources hr {
@@ -136,9 +142,15 @@ hr {
 }
 
 #funding-sources .row {
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: 2% 2% 2% 2%;
+}
+
+#funding-sources .col {
+    max-width: 250px;
+}
+
+#funding-sources img {
+    width: 100%;
 }
 
 #get-card-container {
@@ -147,7 +159,7 @@ hr {
 }
 
 #other-resources {
-    width: 70%;
+    width: 55%;
     margin: 0 auto;
 }
 
@@ -157,7 +169,7 @@ hr {
 }
 
 #other-resources-list img {
-    width: 100%
+    width: 100%;
 }
 
 #other-resources-list .row {
@@ -167,11 +179,10 @@ hr {
 #what-is-this {
     width: 70%;
     margin: 0 auto 3% auto;
-
 }
 
 #what-is-this p {
-    margin-bottom: .8%
+    margin-bottom: 0.8%;
 }
 
 .full-width {
@@ -183,7 +194,8 @@ hr {
     margin-top: 2%;
 }
 
-#what-is-this_timelines-mobile, #what-is-this_timelines-desktop table {
+#what-is-this_timelines-mobile,
+#what-is-this_timelines-desktop table {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -204,7 +216,7 @@ hr {
     width: 100%;
     margin: 2% inherit 1% inherit;
     padding-top: 1%;
-    margin-top: 3%
+    margin-top: 3%;
 }
 
 #why-is-it-important pre div {
@@ -216,11 +228,11 @@ hr {
 }
 
 #why-is-it-important ul li {
-    margin-bottom: 1%
+    margin-bottom: 1%;
 }
 
 #about_us-container {
-    margin-bottom: 3%
+    margin-bottom: 3%;
 }
 
 #carousel {
@@ -250,6 +262,39 @@ hr {
 
 #what-is-this_timelines-mobile { display: none; }
 #what-is-this_timelines-desktop { display: block; }
+
+#testimonials-carousel-wrapper img {
+    width: 85%;
+    height: 25rem;
+    margin: 0 auto;
+    filter: blur(18px);
+    -webkit-filter: blur(18px);
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+.testimonial-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.testimonial-quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.testimonial-quote p {
+    font-size: 26px;
+}
+
+.site-headline {
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
 @media only screen and (max-width: 1370px) {
     #site-container {
@@ -306,7 +351,7 @@ hr {
         width: 100%;
         margin-bottom: 2%;
     }
-    
+
     .about-editor img {
         width: 250px;
     }
@@ -317,11 +362,15 @@ hr {
         margin-top: 3%;
         margin-bottom: 8%;
     }
-    
+
     #facts-carousel-wrapper h4 {
         position: relative;
         left: 100%;
         margin-bottom: 3.5%;
+    }
+
+    #testimonials-carousel-wrapper img {
+        height: 22rem;
     }
 }
 
@@ -330,38 +379,42 @@ hr {
         width: 100%;
     }
 
+    .header-logo {
+        display: none;
+    }
+
     #site-container {
         width: 100%;
         margin-left: 3%;
-        margin-right: 3%
+        margin-right: 3%;
     }
 
     #facts-carousel-heading {
         text-align: center;
         margin-bottom: 2.5%;
     }
-    
+
     #facts-carousel-wrapper {
         width: 50%;
         margin: 0 auto;
         margin-top: 2.5%;
         margin-bottom: 5%;
     }
-    
+
     .facts-carousel {
         /*background-color: aqua;*/
         height: 100px;
     }
-    
+
     .facts-carousel .col {
-        margin-top: .5%;
+        margin-top: 0.5%;
     }
-    
+
     .facts-carousel .row {
         width: 94%;
         margin: 0 auto;
     }
-    
+
     .facts-carousel img {
         vertical-align: middle;
         margin-right: 0px;
@@ -388,13 +441,17 @@ hr {
         width: 125%;
         margin: 1rem auto 1rem -18%;
     }
-    
+
     #unit-subsections ol[type="I"] > li {
         margin-bottom: 2.5%;
     }
 
-    #what-is-this_timelines-mobile { display: block; }
-    #what-is-this_timelines-desktop { display: none }
+    #what-is-this_timelines-mobile {
+        display: block;
+    }
+    #what-is-this_timelines-desktop {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 670px) {
@@ -417,28 +474,28 @@ hr {
         text-align: center;
         margin-bottom: 2.5%;
     }
-    
+
     #facts-carousel-wrapper {
         width: 90%;
         margin: 0 auto;
         margin-top: 2.5%;
         margin-bottom: 20%;
     }
-    
+
     .facts-carousel {
         /*background-color: aqua;*/
-        overflow: visible
+        overflow: visible;
     }
-    
+
     .facts-carousel .col {
-        margin-top: .5%;
+        margin-top: 0.5%;
     }
-    
+
     .facts-carousel .row {
         width: 94%;
         margin: 0 auto;
     }
-    
+
     .facts-carousel img {
         vertical-align: middle;
         width: 40px;
@@ -463,5 +520,16 @@ hr {
 
     #ghseets-charts iframe {
         width: 95%;
+    }
+
+    #testimonials-carousel-wrapper img {
+        width: 85%;
+        height: 15rem;
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+    
+    .testimonial-quote p {
+        font-size: 12px;
     }
 }

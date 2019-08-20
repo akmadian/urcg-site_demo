@@ -2,7 +2,14 @@ $(document).ready(function(){
     $(".facts-carousel").slick({
         autoplay: true,
         accessibility: true,
-        dots: true
+    });
+});
+
+$(document).ready(function(){
+    $(".testimonials-carousel").slick({
+        autoplay: true,
+        accessibility: true,
+        fade: true,
     });
 });
 
