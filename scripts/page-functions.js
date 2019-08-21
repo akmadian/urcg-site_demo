@@ -2,6 +2,7 @@ $(document).ready(function(){
     $(".facts-carousel").slick({
         autoplay: true,
         accessibility: true,
+        autoplaySpeed: 4000
     });
 });
 
@@ -10,6 +11,7 @@ $(document).ready(function(){
         autoplay: true,
         accessibility: true,
         fade: true,
+        autoplaySpeed: 4500
     });
 });
 
