@@ -57,57 +57,41 @@
                         <div class="testimonial-container">
                             <img src="assets/testimonials/cropped/testimonial-1.jpg" alt="Students Working">
                             <div class="testimonial-quote">
-                                <p>
-                                    "I just want to let you know that as a student of color, 
-                                    who felt very lost and sometimes alone due to my skin 
-                                    color...it is incredibly heart rendering to know how 
-                                    much you are really teaching students in your class… You 
-                                    are truly touching many more lives than you think just 
-                                    by creating a safe place for such a delicate subject to 
-                                    be discussed."
-                                </p>
-                                <b> - URC Student</b>
+                                <div class="spinner-border" role="status" id="testimonials-spinner">
+                                    <span class="sr-only">Loading...</span>
+                                </div>
+                                <div id="testimonial-quote-wrapper-0" style="display: none">
+                                    <p id="testimonial-quote-0"></p>
+                                    <b id="testimonial-quotee-0"></b>
+                                </div>
                             </div>
                         </div>
                         <div class="testimonial-container">
                             <img src="assets/testimonials/cropped/testimonial-2.jpg" alt="Students Working">
                             <div class="testimonial-quote">
-                                <p>
-                                    "Eye opening and uplifting. It was a unit I've always 
-                                    wanted to teach, and I loved every second of the time 
-                                    I spent opening some of my students' eyes up to facts 
-                                    that they maybe didn't believe, but at least now are 
-                                    aware of."
-                                </p>
-                                <b> - URC Teacher</b>
+                                <p id="testimonial-quote-1"></p>
+                                <b id="testimonial-quotee-1"></b>
                             </div>
                         </div>
                         <div class="testimonial-container">
                             <img src="assets/testimonials/cropped/testimonial-3.jpg" alt="Students Working">
                             <div class="testimonial-quote">
-                                <p>
-                                    "I am a public school educated moderate Republican 
-                                    who grew up in the white suburbs of ________.  I was 
-                                    fortunate enough to send my boys to ________ where 
-                                    they got a great education from folks like you who 
-                                    teach your course work but do it outside the box. 
-                                    The exposure they got to that thinking will help them 
-                                    every day of their lives. Thank you for what you are 
-                                    doing and how you are doing it. You have my full support."
-                                </p>
-                                <b> - URC Parent</b>
+                                <p id="testimonial-quote-2"></p>
+                                <b id="testimonial-quotee-2"></b>
                             </div>
                         </div>
                         <div class="testimonial-container">
                             <img src="assets/testimonials/cropped/testimonial-4.jpg" alt="Students Working">
                             <div class="testimonial-quote" style="color: black">
-                                <p>
-                                    "The effects of racism are present in the science 
-                                    community and that we don't talk about race anywhere 
-                                    else so it is good that a class is addressing it, 
-                                    even if it is a science class."
-                                </p>
-                                <b> - URC Student</b>
+                                <p id="testimonial-quote-3"></p>
+                                <b id="testimonial-quotee-3"></b>
+                            </div>
+                        </div>
+                        <div class="testimonial-container">
+                            <img src="assets/testimonials/cropped/testimonial-4.jpg" alt="Students Working">
+                            <div class="testimonial-quote" style="color: black">
+                                <p id="testimonial-quote-4"></p>
+                                <b id="testimonial-quotee-4"></b>
                             </div>
                         </div>
                     </div>
@@ -142,7 +126,7 @@
                     </div>
                 </div>
             </div>
-            <div id="facts-carousel-wrapper">
+            <div id="facts-carousel-wrapper" hidden>
                 <div id="facts-carousel-heading">
                     <h5>Facts About Users of the URC!</h5>
                 </div>
@@ -206,6 +190,7 @@
 
         </div>
         <script src="scripts/page-functions.js"></script>
+        <script src="scripts/load-testimonials.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
