@@ -296,6 +296,18 @@ hr {
     margin-bottom: 2rem;
 }
 
+#dear-educator {
+    margin: 5%;
+}
+
+.collapse {
+    margin: 0px 5% 2rem 5%
+}
+
+#collapse-buttons {
+    margin-top: 1rem;
+}
+
 @media only screen and (max-width: 1370px) {
     #site-container {
         font-size: 14px;
