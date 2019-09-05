@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/user/beta.underrep.com/
+    - export DEPLOYPATH=/home/undexuqw/beta.underrep.com/
     - /bin/cp ./index.html $DEPLOYPATH
     - /bin/cp ./get.html $DEPLOYPATH
     - /bin/cp ./header.html $DEPLOYPATH
