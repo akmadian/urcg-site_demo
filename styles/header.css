@@ -1,12 +1,13 @@
-.header img {
-    width: 50px;
-    margin-right: 20px
+.header-logo {
+    display: block;
+    width: 4.5%;
+    height: auto;
+    margin-right: 1%;
+    max-width: 100px;
 }
 
-.urcg-logo {
-    width: 20px;
-    height: 30px;
-    padding: 1% 2%;
+#navbarCollapse {
+    margin-bottom: 0px;
 }
 
 @media only screen and (max-width: 1370px) {
@@ -32,26 +33,20 @@
         font-size: 12px;
         left: 10px;
     }
+
+    .header-logo {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 670px) {
-    .navbar-brand {
-        font-size: 14px;
-        left: 10px;
-    }
-
-    .navbar-brand p {
-        font-size: 12px;
-        left: 10px;
-    }
-
     .navbar {
         padding-top: 1%;
         padding-bottom: 1%;
         margin-bottom: 5%;
     }
 
-    .urcg-logo {
+    .header-logo {
         margin-right: 1px !important;
         height: 50px;
         width: 50px !important;

@@ -4,27 +4,25 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta property="og:title" content="underrep.com - Home"/>
+        <meta property="og:title" content="underrep.com - Get"/>
         <meta property="og:url" content="underrep.com"/>
         <meta property="og:type" content="website"/>
         <meta property="og:description" name="Description"
         content="The Underrepresentation Curriculum Project – A modular, 
         student-centered curriculum designed to examine and 
-        address equity and inclusion in science. - Home"/>
+        address equity and inclusion in science. - Get"/>
         <meta property="og:image" content="assets/overoverlords.png"/>
         <title>
-            underrep.com - Home
+            underrep.com - Get
         </title>
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet/less" type="text/css" href="styles/timeline.less">
 
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
             crossorigin="anonymous"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -64,7 +62,7 @@
                 </div>
             </div>
             <div id="other-resources">
-                <div id="other-resources-heading" class="text-center">
+                <div id="other-resources-heading_desktop" class="text-center">
                     <h3>Other Resources</h3>
                     <p>
                         The Underrepresentation Curriculum Project is just one of several organizations working to address
@@ -75,7 +73,7 @@
                     <div class="row">
                         <div class="col-12 col-md-3">
                             <a href="https://engage.aps.org/stepup/home" onclick="GASendEvent('stepup-link-click')">
-                                <img src="assets/stepup-logo.svg" alt="The StepUp Logo">
+                                <img src="assets/stepup-logo.svg" alt="The StepUp Logo" style="margin-bottom: 1rem;">
                             </a>
                         </div>
                         <div class="col">
@@ -138,9 +136,9 @@
                     </button>
                 </p>
                 <div class="collapse" id="collapse">
-                    <div class="card card-body">
+                    <div class="card card-body" id="collapse-card-body">
                         <div class="collapse-body-wrapper">
-                            <div id="unit-subsections" style="text-align: left; display: none">
+                            <div id="unit-subsections" style="text-align: left;">
                                 <div id="unit-subsections-embarkation">
                                     <ol type="I">
                                         <li>
@@ -148,9 +146,10 @@
                                                 <div class="col-12 col-md-8">
                                                     <b>Embarkation: Laying the Foundation</b>
                                                 </div>
+                                                <!--
                                                 <div class="col-12 col-md-4">
                                                     Resources
-                                                </div>
+                                                </div>-->
                                             </div>
                                             <ol type="A">
                                                 <li>Learning about Scientists Lives</li>
@@ -173,9 +172,10 @@
                                                 <div class="col-12 col-md-8">
                                                     <b>Fueling: Gaining Relevant Knowledge</b>
                                                 </div>
+                                                <!--
                                                 <div class="col-12 col-md-4">
                                                     Resources
-                                                </div>
+                                                </div>-->
                                             </div>
                                             <ol type="A">
                                                 <li>Meritocracy</li>
@@ -205,9 +205,10 @@
                                                 <div class="col-12 col-md-8">
                                                     <b>Ignition: Turning Knowledge Into Action</b>
                                                 </div>
+                                                <!--
                                                 <div class="col-12 col-md-4">
                                                     Resources
-                                                </div>
+                                                </div>-->
                                             </div>
                                             <ol type="A">
                                                 <li>Students Taking Action</li>
@@ -219,7 +220,8 @@
                             <div id="timelines-container" style="display: none">
                                 <div id="what-is-this_timelines-mobile">
                                     <p>Here, for example, are two different implementations from two different users of the curriculum.</p>
-                                    <table class="table">
+                                    <hr>
+                                    <table class="table table-borderless">
                                         <tbody>
                                             <tr>
                                                 <th scope="col"></th>
@@ -249,7 +251,7 @@
                                         </tbody>
                                     </table>
                                     <hr>
-                                    <table class="table">
+                                    <table class="table table-borderless">
                                         <tbody>
                                             <tr>
                                                 <th scope="col"></th>
@@ -386,21 +388,25 @@
             <hr>
             <div id="why-is-it-important" class="text-center">
                 <h3>Why is it Important?</h3>
-                <pre><div><p>“Dialogue further requires an intense faith in humankind, faith in the 
-power to make and remake, to create and recreate, faith in their vocation 
-to be more fully human (which is a privileged of an elite, but the birthright of all).” 
-    - <b>Paulo Freire,</b> <i>Pedagogy of the Oppressed</i>
-</p>
-<hr>
-<p>“Engaged pedagogy does not seek simply to empower students. Any classroom 
-that employs a holistic model of learning will also be a place where 
-teachers grow, and are empowered by the process.”
-
-“As a classroom community, our capacity to generate excitement is deeply 
-affected by our interest in one another, in hearing one another’s voices, 
-in recognizing one another’s presence.”
-
-    - <b>bell hooks</b>, <i>Teaching to Transgress: Education as the Practice of Freedom</i></p></div></pre>
+                <div class="mimic-pre">
+                    <p>
+                        “Dialogue further requires an intense faith in humankind, faith in the 
+                        power to make and remake, to create and recreate, faith in their vocation 
+                        to be more fully human (which is a privileged of an elite, but the birthright of all).” <br>
+                    </p>
+                    - <b>Paulo Freire,</b> <i>Pedagogy of the Oppressed</i>
+                    <hr>
+                    <p>
+                        “Engaged pedagogy does not seek simply to empower students. Any classroom 
+                        that employs a holistic model of learning will also be a place where 
+                        teachers grow, and are empowered by the process.”
+                                            
+                        “As a classroom community, our capacity to generate excitement is deeply 
+                        affected by our interest in one another, in hearing one another’s voices, 
+                        in recognizing one another’s presence.” <br>
+                    </p>
+                    - <b>bell hooks</b>, <i>Teaching to Transgress: Education as the Practice of Freedom</i>
+                </div>
                 <b>Abstract</b>
                 <p>
                     Underrepresentation on many levels is endemic in STEM, and teachers in 
@@ -418,46 +424,47 @@ in recognizing one another’s presence.”
                     <a href="#ref-1" id="uref-1"><sup>[i]</sup></a>
                     , the problem remains complex and enormously consequential.
                 </p>
-                <ul>
-                    <p>Implications Include:</p>
-                    <li>
-                        A lack of diversity in portrayals of science contributes to a lack of 
-                        diversity in the students who pursue the field; as the saying goes 
-                        “you cannot be what you cannot see.”. Research has shown that diverse 
-                        groups do more impactful scientific work
-                        <a href="#ref-2" id="uref-2"><sup>[ii]</sup></a>
-                        ; science indirectly suffers 
-                        as a result of this limited diversity.  Our charge, in the words of the 
-                        American Association of Physics Teachers, is “making [science] more 
-                        inclusive and supportive of women and people of color is required for 
-                        doing excellent[science].
-                        <a href="#ref-3" id="uref-3"><sup>[iii]</sup></a>
-                    </li>
-                    <li>
-                        The equitable access to science for all is, in the powerful words of 
-                        Chanda Prescod-Weinstein, a matter of “fundamental human decency.” 
-                        The current reality, in which this access is not fully realized, is 
-                        a moral problem as much as a pragmatic one.
-                    </li>
-                    <li>
-                        In both society and science, the ability to recognize and work in 
-                        diverse settings is increasingly valuable. By talking about diversity 
-                        (or the lack thereof) as it pertains to science, we will be better 
-                        preparing our students for their lives as scientists or as engaged citizens.
-                    </li>
-                    <li>
-                        When students are implicitly taught that science can only be done by 
-                        a select few, science may be inadvertently portrayed as inaccessible 
-                        or even irrelevant to “normal” people or people who love the arts. A 
-                        population that regards science as outside their reference is unlikely 
-                        to fund it and may even come to fear its power.
-                    </li>
-                </ul>
+                <b>Implications Include:</b>
+                <p style="margin-bottom: 0rem; margin-top: .4rem">
+                    A lack of diversity in portrayals of science contributes to a lack of 
+                    diversity in the students who pursue the field; as the saying goes 
+                    “you cannot be what you cannot see.”. Research has shown that diverse 
+                    groups do more impactful scientific work
+                    <a href="#ref-2" id="uref-2"><sup>[ii]</sup></a>; 
+                    science indirectly suffers 
+                    as a result of this limited diversity.  Our charge, in the words of the 
+                    American Association of Physics Teachers, is “making [science] more 
+                    inclusive and supportive of women and people of color is required for 
+                    doing excellent[science].
+                    <a href="#ref-3" id="uref-3"><sup>[iii]</sup></a>
+                </p>
+                <p style="margin-bottom: 0rem">
+                    &bull;<br>
+                    The equitable access to science for all is, in the powerful words of 
+                    Chanda Prescod-Weinstein, a matter of “fundamental human decency.” 
+                    The current reality, in which this access is not fully realized, is 
+                    a moral problem as much as a pragmatic one.
+                </p>
+                <p style="margin-bottom: 0rem">
+                    &bull;<br>
+                    In both society and science, the ability to recognize and work in 
+                    diverse settings is increasingly valuable. By talking about diversity 
+                    (or the lack thereof) as it pertains to science, we will be better 
+                    preparing our students for their lives as scientists or as engaged citizens.
+                </p>
+                <p style="margin-bottom: 1rem">
+                    &bull;<br>
+                    When students are implicitly taught that science can only be done by 
+                    a select few, science may be inadvertently portrayed as inaccessible 
+                    or even irrelevant to “normal” people or people who love the arts. A 
+                    population that regards science as outside their reference is unlikely 
+                    to fund it and may even come to fear its power.
+                </p>
                 <p>
                     This underrepresentation is a problem for science teachers to help solve 
                     and, happily, we have effective ways to do so.  One such way is to engage 
-                    students in conversation about this underrepresentation , and to explore 
-                    the societal forces that it reflects.  In doing so, students will be using 
+                    students in conversation about this underrepresentation, and to explore 
+                    the societal forces that it reflects. In doing so, students will be using 
                     and practicing scientific skills, while gaining a deeper understanding of 
                     “science as a human endeavor”
                     <a href="#ref-4" id="uref-4"><sup>[iv]</sup></a>. 
@@ -475,22 +482,26 @@ in recognizing one another’s presence.”
                     the challenges listed above <br><br>
 
                     By creating this resource, we hope to help science teachers facilitate 
-                    these important conversations about who does science and why.  We have 
+                    these important conversations about who does science and why. We have 
                     undertaken this project because we love science and want it to be better, 
                     because we believe all students can learn and deserve to fall in love with 
                     science if they choose, and because we recognize that the history of science 
                     teaching and culture of science have ignored many students and misled 
-                    nearly all.  Considering the demographics of who does science  is not only 
-                    relevant but, more importantly , represents our recognition that science is, 
+                    nearly all. Considering the demographics of who does science is not only 
+                    relevant but, more importantly, represents our recognition that science is, 
                     by its very nature, a human endeavor. <br><br>
 
                     After years of doing this work with students, we have seen its transformative 
                     potential in our own classrooms and beyond, and heard it from our students: <br>
 
-                    <pre><div><p>[Race] does relate to what we learn. By discussing it in physics, we are 
-able to connect what we have learned to other things in ‘real life.’ By 
-learning about it, I feel less discouraged from perhaps pursuing a course 
-in math or science.</p></div></pre>
+                    <div class="mimic-pre">
+                        <p>
+                            [Race] does relate to what we learn. By discussing it in physics, we are 
+                            able to connect what we have learned to other things in ‘real life.’ By 
+                            learning about it, I feel less discouraged from perhaps pursuing a course 
+                            in math or science.
+                        </p>
+                    </div>
 
                     These conversations are not only for the benefit of students from 
                     underrepresented demographic groups. Students who identify in the majority 
