@@ -320,8 +320,8 @@ hr {
 @media only screen and (max-width: 1370px) {
     #site-container {
         font-size: 14px;
-        margin-left: 7%;
-        margin-right: 7%;
+        padding-left: 7%;
+        padding-right: 7%;
         margin-bottom: 280px;
         padding-bottom: 50px;
     }
@@ -374,41 +374,9 @@ hr {
 
     #site-container {
         width: 100%;
-        margin-left: 3%;
-        margin-right: 3%;
-    }
-
-    #facts-carousel-heading {
-        text-align: center;
-        margin-bottom: 2.5%;
-    }
-
-    #facts-carousel-wrapper {
-        width: 50%;
-        margin: 0 auto;
-        margin-top: 2.5%;
-        margin-bottom: 5%;
-    }
-
-    .facts-carousel {
-        /*background-color: aqua;*/
-        height: 100px;
-    }
-
-    .facts-carousel .col {
-        margin-top: 0.5%;
-    }
-
-    .facts-carousel .row {
-        width: 94%;
-        margin: 0 auto;
-    }
-
-    .facts-carousel img {
-        vertical-align: middle;
-        margin-right: 0px;
-        width: 90px;
-        height: 90px;
+        padding-left: 3%;
+        padding-right: 3%;
+        margin-bottom: 380px;
     }
 
     #get-card-container {
@@ -446,6 +414,32 @@ hr {
         padding-right: 1rem;
         padding-left: 1rem;
     }
+
+    #funding-sources {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #funding-sources p {
+        font-size: 16px;
+        font-weight: 500
+    }
+
+    #testimonials-carousel-wrapper {
+        width: 100% !important;
+        height: 15rem !important;
+        margin-bottom: 3rem;
+    }
+
+    #testimonials-carousel-wrapper img {
+        width: 100% !important;
+        height: 15rem !important;
+        margin-top: 0px;
+    }
+
+    .testimonial-quote p {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 670px) {
@@ -453,24 +447,12 @@ hr {
 
     #site-container {
         width: 94%;
-        margin-top: 100%;
         margin: 0 auto;
         margin-bottom: 710px;
+        margin-top: 0px;
     }
 
     .phone-hidden { display: none; }
-
-    #facts-carousel-heading {
-        text-align: center;
-        margin-bottom: 2.5%;
-    }
-
-    #facts-carousel-wrapper {
-        width: 90%;
-        margin: 0 auto;
-        margin-top: 2.5%;
-        margin-bottom: 20%;
-    }
 
     #unit-subsections {
         width: 100%;
@@ -480,21 +462,6 @@ hr {
     #unit-subsections ol { margin-left: -1rem; }
 
     #what-is-this_timelines-mobile table { width: 100%; }
-
-    .facts-carousel { overflow: visible; }
-    .facts-carousel .col { margin-top: 0.5%; }
-
-    .facts-carousel .row {
-        width: 94%;
-        margin: 0 auto;
-    }
-
-    .facts-carousel img {
-        vertical-align: middle;
-        width: 40px;
-        height: 40px;
-        margin: 0 auto;
-    }
 
     .about-editor { margin-bottom: 50px; }
 
@@ -513,15 +480,6 @@ hr {
         transform: translateX(50%)
     }
 
-    #testimonials-carousel-wrapper img {
-        width: 85%;
-        height: 15rem;
-        margin-bottom: 10%;
-        margin-top: 10%;
-    }
-    
-    .testimonial-quote p { font-size: 12px; }
-
     .mimic-pre {
         padding: 1rem;
         font-size: 12px;
@@ -539,5 +497,20 @@ hr {
         width: 60% !important;
         margin: 0 auto;
         transform: translateX(30%)
+    }
+
+    #testimonials-carousel-wrapper {
+        height: 8rem;
+        margin-bottom: 3rem;
+    }
+
+    #testimonials-carousel-wrapper img {
+        width: 100%;
+        height: 8rem;
+        margin-top: 0px;
+    }
+
+    .testimonial-quote p {
+        font-size: 13px;
     }
 }

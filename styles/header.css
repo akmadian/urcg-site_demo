@@ -23,6 +23,14 @@
 }
 
 @media only screen and (max-width: 825px) {
+    .navbar {
+        margin-bottom: 0%;
+    }
+
+    .navbar-collapse {
+        margin-right: 0px;
+    }
+
     .navbar-brand {
         font-size: 14px;
         left: 10px;
@@ -41,9 +49,10 @@
 
 @media only screen and (max-width: 670px) {
     .navbar {
+        padding-left: 8px;
+        padding-right: 5px;
         padding-top: 1%;
         padding-bottom: 1%;
-        margin-bottom: 5%;
     }
 
     .header-logo {

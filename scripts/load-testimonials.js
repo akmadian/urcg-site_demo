@@ -5,6 +5,8 @@ var chosenTestimonials = []
 getSpreadsheetData()
     .then(function(res) {
         testimonials = res.feed.entry
+        filterForScreen()
+
         genRandomInts(0, testimonials.length - 1).map(i => {
             chosenTestimonials.push({
                 quote: testimonials[i]["gsx$quote"]["$t"],
@@ -15,6 +17,7 @@ getSpreadsheetData()
     })
 
 function pushToPage() {
+    // Iterate over testimonial containers
     for (var i = 0; i < 5; i++) {
         const quoteId = "testimonial-quote-" + i
         const quoteeId = "testimonial-quotee-" + i
@@ -25,6 +28,21 @@ function pushToPage() {
     // When done, hide spinner and show quotes
     document.getElementById("testimonial-quote-wrapper-0").style.display = "block"
     document.getElementById("testimonials-spinner").style.display = "none"
+}
+
+/**
+ * Filters testimonials by length based on screen width
+ * so they aren't super long on mobile/ tablet screens
+ */
+function filterForScreen() {
+    if (screen.width > 750) { return }
+    var filterLen
+
+    if (screen.width <= 550) { filterLen = 150 } // Mobile
+    else if (750 >= screen.width > 550) { filterLen = 225 } // Tablet
+
+    const filtered = testimonials.filter(testim => testim["gsx$quote"]["$t"].length < filterLen)
+    testimonials = filtered
 }
 
 function getSpreadsheetData() {

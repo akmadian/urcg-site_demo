@@ -92,7 +92,13 @@ footer .col-6.col-md-12 {
 }
 
 @media only screen and (max-width: 825px) {
+    footer {
+        height: 400px;
+    }
 
+    .footer-social-link .row {
+        margin-left: 0px;
+    }
 }
 
 @media only screen and (max-width: 670px) {

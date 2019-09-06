@@ -42,20 +42,22 @@
             })
         </script>
         <script>
+        /*
         $(document).ready(function(){
             $(".facts-carousel").slick({
                 autoplay: true,
                 accessibility: true,
                 autoplaySpeed: 4000
             });
-        });
+        });*/
 
         $(document).ready(function(){
             $(".testimonials-carousel").slick({
                 autoplay: true,
                 accessibility: true,
                 fade: true,
-                autoplaySpeed: 4500
+                autoplaySpeed: 4500,
+                arrows: screen.width < 775 ? false : true
             });
         });
         </script>
@@ -64,58 +66,58 @@
         <div id="header-wrapper">
 
         </div>
-        <div id="site-container">
-            <div id="home-content" class="container">
-                <div class="site-headline phone-hidden">
-                    <h1 class="display-4">The Underrepresentation Curriculum Project</h1>
-                    <p class="bulma-help">A modular, student-centered curriculum designed to examine and address equity and inclusion in science.</p>
-                </div>
-                <div id="testimonials-carousel-wrapper">
-                    <div class="testimonials-carousel">
-                        <div class="testimonial-container">
-                            <img src="assets/testimonials/cropped/testimonial-1.jpg" alt="Students Working">
-                            <div class="testimonial-quote">
-                                <div class="spinner-border" role="status" id="testimonials-spinner">
-                                    <span class="sr-only">Loading...</span>
-                                </div>
-                                <div id="testimonial-quote-wrapper-0" style="display: none">
-                                    <p id="testimonial-quote-0"></p>
-                                    <b id="testimonial-quotee-0"></b>
-                                </div>
-                            </div>
+        <div id="testimonials-carousel-wrapper">
+            <div class="testimonials-carousel">
+                <div class="testimonial-container">
+                    <img src="assets/testimonials/cropped/testimonial-1.jpg" alt="Students Working">
+                    <div class="testimonial-quote">
+                        <div class="spinner-border" role="status" id="testimonials-spinner">
+                            <span class="sr-only">Loading...</span>
                         </div>
-                        <div class="testimonial-container">
-                            <img src="assets/testimonials/cropped/testimonial-2.jpg" alt="Students Working">
-                            <div class="testimonial-quote">
-                                <p id="testimonial-quote-1"></p>
-                                <b id="testimonial-quotee-1"></b>
-                            </div>
-                        </div>
-                        <div class="testimonial-container">
-                            <img src="assets/testimonials/cropped/testimonial-3.jpg" alt="Students Working">
-                            <div class="testimonial-quote">
-                                <p id="testimonial-quote-2"></p>
-                                <b id="testimonial-quotee-2"></b>
-                            </div>
-                        </div>
-                        <div class="testimonial-container">
-                            <img src="assets/testimonials/cropped/testimonial-4.jpg" alt="Students Working">
-                            <div class="testimonial-quote" style="color: black">
-                                <p id="testimonial-quote-3"></p>
-                                <b id="testimonial-quotee-3"></b>
-                            </div>
-                        </div>
-                        <div class="testimonial-container">
-                            <img src="assets/testimonials/cropped/testimonial-4.jpg" alt="Students Working">
-                            <div class="testimonial-quote" style="color: black">
-                                <p id="testimonial-quote-4"></p>
-                                <b id="testimonial-quotee-4"></b>
-                            </div>
+                        <div id="testimonial-quote-wrapper-0" style="display: none">
+                            <p id="testimonial-quote-0"></p>
+                            <b id="testimonial-quotee-0"></b>
                         </div>
                     </div>
                 </div>
+                <div class="testimonial-container">
+                    <img src="assets/testimonials/cropped/testimonial-2.jpg" alt="Students Working">
+                    <div class="testimonial-quote">
+                        <p id="testimonial-quote-1"></p>
+                        <b id="testimonial-quotee-1"></b>
+                    </div>
+                </div>
+                <div class="testimonial-container">
+                    <img src="assets/testimonials/cropped/testimonial-3.jpg" alt="Students Working">
+                    <div class="testimonial-quote">
+                        <p id="testimonial-quote-2"></p>
+                        <b id="testimonial-quotee-2"></b>
+                    </div>
+                </div>
+                <div class="testimonial-container">
+                    <img src="assets/testimonials/cropped/testimonial-4.jpg" alt="Students Working">
+                    <div class="testimonial-quote" style="color: black">
+                        <p id="testimonial-quote-3"></p>
+                        <b id="testimonial-quotee-3"></b>
+                    </div>
+                </div>
+                <div class="testimonial-container">
+                    <img src="assets/testimonials/cropped/testimonial-4.jpg" alt="Students Working">
+                    <div class="testimonial-quote" style="color: black">
+                        <p id="testimonial-quote-4"></p>
+                        <b id="testimonial-quotee-4"></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="site-container">
+            <div id="home-content" class="container">
+                <div class="site-headline d-none d-sm-none d-md-none d-lg-block">
+                    <h1 class="display-4">The Underrepresentation Curriculum Project</h1>
+                    <p class="bulma-help">A modular, student-centered curriculum designed to examine and address equity and inclusion in science.</p>
+                </div>
                 <div id="dear-educator">
-                    <h5>Dear Educator,</h5>
+                    <h5>Dear Educator, </h5>
                     <p>
                         We’re so glad you’ve found this resource, and we hope 
                         you’ll join the community of teachers using it to address 
@@ -142,49 +144,6 @@
                     </p>
                 </div>
             </div>
-            <div id="facts-carousel-wrapper" hidden>
-                <div id="facts-carousel-heading">
-                    <h5>Facts About Users of the URC!</h5>
-                </div>
-                <div class="facts-carousel">
-                    <div>
-                        <div class="row">
-                            <div class="col-12 col-md-auto">
-                                <img src="assets/grad-cap_icon.png">
-                            </div>
-                            <div class="col">
-                                <b>Implementation Setting</b>
-                                <p>Text about implementation settings goes here, the grad cap sybolizes educational information</p>
-                                <p class="bulma-help">Maybe a <a href="#">more info link</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="row">
-                            <div class="col-12 col-md-auto">
-                                <img src="assets/grad-cap_icon.png" alt="">
-                            </div>
-                            <div class="col">
-                                <b>Disceplines Taught</b>
-                                <p>Some info about Disceplines taught goes here, the grad cap symbolizes educational information</p>
-                                <p class="bulma-help">Maybe a <a href="#">more info link</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="row">
-                            <div class="col-12 col-md-auto">
-                                <img src="assets/sj-fist_icon.png" alt="">
-                            </div>
-                            <div class="col">
-                                <b>Focus on Elements of Identity</b>
-                                <p>Some information about focus of identity stats goes here, the fist icon is symbolic for social justice</p>
-                                <p class="bulma-help">Maybe a <a href="#">more info link</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div id="funding-sources" class="container card">
                 <b align="center">The URC Is Funded In Part By</b>
                 <hr>
@@ -194,7 +153,7 @@
                         <!--<p class="bulma-help">The American Association of Physics Teachers</p>-->
                     </div>
                     <div class="col-md-4 col-12">
-                        <h4>The Physics Education Research Leadership and Organizing Council (PERLOC)</h4>
+                        <p>The Physics Education Research Leadership and Organizing Council (PERLOC)</p>
                     </div>
                     <div class="col-md-4 col-12">
                         <img src="assets/tt-logo.png" style="width: 120%" alt="The Teaching Tolerance Logo">
