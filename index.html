@@ -57,7 +57,7 @@
                 accessibility: true,
                 fade: true,
                 autoplaySpeed: 4500,
-                arrows: screen.width < 775 ? false : true
+                arrows: /*screen.width < 775 ?*/ false /*: true*/
             });
         });
         </script>
@@ -65,6 +65,16 @@
     <body>
         <div id="header-wrapper">
 
+        </div>
+        <!--
+            I know that having the headline and carousel out of the site container div
+            breaks the design convention of the site, but it creates a CSS nightmare,
+            and I'm hourly, and the URC editors are on a budget. So, to save me a headache,
+            and to save them money, it stays like this for now :)
+        -->
+        <div class="site-headline d-none d-sm-none d-md-none d-lg-block">
+            <h1 class="display-4">The Underrepresentation Curriculum Project</h1>
+            <p class="bulma-help">A modular, student-centered curriculum designed to examine and address equity and inclusion in science.</p>
         </div>
         <div id="testimonials-carousel-wrapper">
             <div class="testimonials-carousel">
@@ -112,10 +122,6 @@
         </div>
         <div id="site-container">
             <div id="home-content" class="container">
-                <div class="site-headline d-none d-sm-none d-md-none d-lg-block">
-                    <h1 class="display-4">The Underrepresentation Curriculum Project</h1>
-                    <p class="bulma-help">A modular, student-centered curriculum designed to examine and address equity and inclusion in science.</p>
-                </div>
                 <div id="dear-educator">
                     <h5>Dear Educator, </h5>
                     <p>

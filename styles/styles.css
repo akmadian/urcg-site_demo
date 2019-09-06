@@ -1,7 +1,7 @@
 .about-row {
     margin-bottom: 5%;
-    margin-left: -12.5%;
-    width: 125%;
+    margin-left: 0%;
+    width: 100%;
 }
 
 .about-editor img {
@@ -258,6 +258,12 @@ hr {
 #what-is-this_timelines-mobile { display: none; }
 #what-is-this_timelines-desktop { display: block; }
 
+#testimonials-carousel-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 0px;
+}
+
 #testimonials-carousel-wrapper img {
     width: 85%;
     height: 25rem;
@@ -287,12 +293,13 @@ hr {
 }
 
 .site-headline {
+    margin-top: 2rem;
     text-align: center;
-    margin-bottom: 2rem;
 }
 
 #dear-educator {
-    margin: 5%;
+    margin: 0 5%;
+    margin-bottom: 3rem;
 }
 
 .collapse {
@@ -395,8 +402,7 @@ hr {
     }
 
     #unit-subsections {
-        width: 125%;
-        margin: 1rem auto 1rem -18%;
+        width: 100%;
     }
 
     #unit-subsections ol[type="I"] > li {
@@ -440,6 +446,21 @@ hr {
     .testimonial-quote p {
         font-size: 14px;
     }
+
+    .about-row {
+        margin-right: 0px !important;
+    }
+
+    .about-editor {
+        width: 10%;
+        margin-bottom: 2rem;
+    }
+
+    .about-editor img {
+        margin-left: 0px;
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 
 @media only screen and (max-width: 670px) {
@@ -448,8 +469,8 @@ hr {
     #site-container {
         width: 94%;
         margin: 0 auto;
-        margin-bottom: 710px;
-        margin-top: 0px;
+        margin-bottom: 700px;
+        margin-top: 1rem;
     }
 
     .phone-hidden { display: none; }
@@ -461,7 +482,11 @@ hr {
 
     #unit-subsections ol { margin-left: -1rem; }
 
-    #what-is-this_timelines-mobile table { width: 100%; }
+    #what-is-this_timelines-mobile table { 
+        width: 100%; 
+    }
+
+    .about-row { margin-right: 0px !important }
 
     .about-editor { margin-bottom: 50px; }
 
@@ -507,10 +532,21 @@ hr {
     #testimonials-carousel-wrapper img {
         width: 100%;
         height: 8rem;
-        margin-top: 0px;
+        margin-top: 20px;
+        margin-bottom: 20%;
     }
 
     .testimonial-quote p {
         font-size: 13px;
+    }
+
+    #dear-educator {
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+    }
+
+    #funding-sources b {
+        font-size: 20px;
+        padding: .4rem 0;
     }
 }
