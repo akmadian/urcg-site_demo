@@ -1,0 +1,13 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/undexuqw/beta.underrep.com/
+    - /bin/cp ./index.html $DEPLOYPATH
+    - /bin/cp ./get.html $DEPLOYPATH
+    - /bin/cp ./header.html $DEPLOYPATH
+    - /bin/cp ./footer.html $DEPLOYPATH
+    - /bin/cp ./about.html $DEPLOYPATH
+    - /bin/cp ./styles/ $DEPLOYPATH
+    - /bin/cp ./scripts/ $DEPLOYPATH
+    - /bin/cp ./assets/ $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
