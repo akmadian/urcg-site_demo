@@ -35,11 +35,13 @@ function pushToPage() {
  * so they aren't super long on mobile/ tablet screens
  */
 function filterForScreen() {
-    if (screen.width > 750) { return }
+    if (screen.width > 1025) { return }
     var filterLen
 
     if (screen.width <= 550) { filterLen = 150 } // Mobile
-    else if (750 >= screen.width > 550) { filterLen = 225 } // Tablet
+    else if (750 >= screen.width && screen.width > 550) { filterLen = 225 } // Tablet
+    else if (1024 >= screen.width && screen.width > 750) { filterLen = 275 } // iPad Pro
+    else { console.error("Breakpoint Unsupported") }
 
     const filtered = testimonials.filter(testim => testim["gsx$quote"]["$t"].length < filterLen)
     testimonials = filtered

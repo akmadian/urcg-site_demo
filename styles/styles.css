@@ -50,37 +50,9 @@ a.nav-link { cursor: pointer; }
     color: darkgray;
 }
 
-#facts-carousel-heading {
-    text-align: center;
-    margin-bottom: 2.5%;
-}
-
-#facts-carousel-wrapper {
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 2.5%;
-    margin-bottom: 5%;
-}
-
-.facts-carousel {
-/*background-color: aqua;*/
-    height: 100px;
-}
-
-.facts-carousel .col {
-    margin-top: 0.5%;
-}
-
-.facts-carousel .row {
-    width: 94%;
-    margin: 0 auto;
-}
-
-.facts-carousel img {
-    vertical-align: middle;
+.collapse.show {
+    margin-left: 0px;
     margin-right: 0px;
-    width: 90px;
-    height: 90px;
 }
 
 html {
@@ -371,6 +343,26 @@ hr {
     #collapse {
         width: 125% !important;
         margin-left: -5rem !important;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    #site-container {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #get-card-container {
+        width: 80%;
+    }
+
+    #other-resources, #what-is-this, #why-is-it-important {
+        width: 90%;
+    }
+
+    .mimic-pre {
+        padding-right: 7rem; padding-left: 7rem;
     }
 }
 
