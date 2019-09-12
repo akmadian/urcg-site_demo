@@ -3,6 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/undexuqw/beta.underrep.com/
     - /bin/cp -R src/scripts $DEPLOYPATH
-    - /bin/cp -R src/styles $DEPLOYPATH
-    - /bin/cp -R src/assets $DEPLOYPATH
     
