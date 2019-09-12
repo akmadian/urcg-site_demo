@@ -5,7 +5,8 @@ var chosenTestimonials = []
 getSpreadsheetData()
     .then(function(res) {
         testimonials = res.feed.entry
-        filterForScreen()
+        testimonials = testimonials.filter(testim => testim["gsx$quotee"]["$t"] == "Student")
+        //filterForScreen()
 
         genRandomInts(0, testimonials.length - 1).map(i => {
             chosenTestimonials.push({
@@ -18,7 +19,7 @@ getSpreadsheetData()
 
 function pushToPage() {
     // Iterate over testimonial containers
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < 4; i++) {
         const quoteId = "testimonial-quote-" + i
         const quoteeId = "testimonial-quotee-" + i
         document.getElementById(quoteId).innerHTML = chosenTestimonials[i].quote
