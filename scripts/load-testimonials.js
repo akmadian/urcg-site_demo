@@ -17,6 +17,16 @@ getSpreadsheetData()
         pushToPage()
     })
 
+$(document).ready(function(){
+    $(".testimonials-carousel").slick({
+        autoplay: true,
+        accessibility: true,
+        fade: true,
+        autoplaySpeed: screen.width < 775 ? 4500 : 6000,
+        arrows: screen.width < 775 ? false : true
+    });
+});
+
 function pushToPage() {
     // Iterate over testimonial containers
     for (var i = 0; i < 4; i++) {
