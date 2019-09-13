@@ -13,3 +13,6 @@ Most JS functionality is in separate files in the `scripts` dir. `page-functions
 Some assets such as the editor headshots and the overlords logo are fetched over HTTPS from assets.underrep.com instead of being served up with the site normally.
 
 For deployment, go into cpanel, go to Files >> Git Version Control >> Manage (on the underrep.com repository) >> Pull or Deploy (at the top) >> Update from Remote (at the bottom). This will copy the contents of this repo to `public_html`. I've set up the permissions to hide unnecessary files.
+
+## Support
+For support with this site's source code, contact Ari Madian [Email](mailto:akmadian@gmail.com) [GitHub](https://github.com/akmadian)

@@ -296,7 +296,7 @@ hr {
     margin-bottom: .4rem;
 }
 
-@media only screen and (max-width: 1370px) {
+@media only screen and (max-width: 2300px) {
     #testimonials-carousel-wrapper {
         width: 80%;
     }
