@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://beta.underrep.com/sitemap.xml
+Sitemap: https://underrep.com/sitemap.xml

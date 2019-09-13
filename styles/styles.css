@@ -231,7 +231,7 @@ hr {
 #what-is-this_timelines-desktop { display: block; }
 
 #testimonials-carousel-wrapper {
-    width: 80%;
+    width: 45%;
     margin: 0 auto;
     margin-top: 0px;
 }
@@ -294,6 +294,16 @@ hr {
 
 .mimic-pre p {
     margin-bottom: .4rem;
+}
+
+@media only screen and (max-width: 1370px) {
+    #testimonials-carousel-wrapper {
+        width: 80%;
+    }
+
+    #testimonials-carousel-wrapper img {
+        width: 85%;
+    }
 }
 
 @media only screen and (max-width: 1370px) {
