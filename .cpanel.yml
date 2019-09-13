@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/undexuqw/beta.underrep.com/
-    - /bin/cp -R src/ $DEPLOYPATH
+    - export DEPLOYPATH=/home/user/beta.underrep.com/
+    - /bin/cp -R src $DEPLOYPATH
