@@ -1,4 +1,6 @@
-allow from all
+Order allow,deny
+Allow from all
+Require all granted
 
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
