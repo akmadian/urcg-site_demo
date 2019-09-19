@@ -4,7 +4,7 @@ This repo contains the source code for [underrep.com](https://underrep.com).
 
 ### For future maintainers:
 
-The site is built using [Bootstrap](https://getbootstrap.com/), some jQuery, and standard HTML, JS, CSS.
+The site is built using [Bootstrap](https://getbootstrap.com/)(v4.3), some jQuery, and standard HTML, JS, CSS. A simple toolset was chosen intentionally in order to make future maintenance/ work more accessible.
 
 The header and footer are located in `./header.html` and `./footer.html` respectively. These html files also have their own CSS files, and are injected into the currently served page on load. This provides one quick and easy place to edit the header and footer instead of having to go to each file to make a single change.
 
@@ -15,4 +15,4 @@ Some assets such as the editor headshots and the overlords logo are fetched over
 For deployment, go into cpanel, go to Files >> Git Version Control >> Manage (on the underrep.com repository) >> Pull or Deploy (at the top) >> Update from Remote (at the bottom). This will copy the contents of this repo to `public_html`. I've set up the permissions to hide unnecessary files.
 
 ## Support
-For support with this site's source code, contact Ari Madian [Email](mailto:akmadian@gmail.com) [GitHub](https://github.com/akmadian)
+For support with this site's source code, contact Ari Madian [[Email]](mailto:akmadian@gmail.com) [[GitHub]](https://github.com/akmadian)
