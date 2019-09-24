@@ -8,7 +8,9 @@ getSpreadsheetData()
         testimonials = testimonials.filter(testim => testim["gsx$quotee"]["$t"] == "Student")
         //filterForScreen()
 
-        genRandomInts(0, testimonials.length - 1).map(i => {
+//        genRandomInts(0, testimonials.length - 1).map(i => {
+
+        genRandomInts(0, 9).map(i => {            
             chosenTestimonials.push({
                 quote: testimonials[i]["gsx$quote"]["$t"],
                 quotee: testimonials[i]["gsx$quotee"]["$t"]
@@ -22,7 +24,7 @@ $(document).ready(function(){
         autoplay: true,
         accessibility: true,
         fade: true,
-        autoplaySpeed: screen.width < 775 ? 4500 : 6000,
+        autoplaySpeed: screen.width < 775 ? 9000 : 12000,
         arrows: screen.width < 775 ? false : true
     });
 });
