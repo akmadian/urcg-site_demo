@@ -75,7 +75,7 @@ function getSpreadsheetData() {
 
 function genRandomInts(min, max) {
     var ints = []
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < 4; i++) {
         var chosen = Math.round(Math.random() * (max - min) + min)
         while (ints.includes(chosen)) {
             chosen = Math.round(Math.random() * (max - min) + min)
