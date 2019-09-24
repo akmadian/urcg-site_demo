@@ -8,9 +8,7 @@ getSpreadsheetData()
         testimonials = testimonials.filter(testim => testim["gsx$quotee"]["$t"] == "Student")
         //filterForScreen()
 
-//        genRandomInts(0, testimonials.length - 1).map(i => {
-
-        genRandomInts(0, 9).map(i => {            
+        genRandomInts(0, testimonials.length - 1).map(i => {
             chosenTestimonials.push({
                 quote: testimonials[i]["gsx$quote"]["$t"],
                 quotee: testimonials[i]["gsx$quotee"]["$t"]
