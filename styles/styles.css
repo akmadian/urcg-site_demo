@@ -240,13 +240,13 @@ hr {
 #what-is-this_timelines-desktop { display: block; }
 
 #testimonials-carousel-wrapper {
-    width: 45%;
+    width: 65%;
     margin: 0 auto;
     margin-top: 0px;
 }
 
 #testimonials-carousel-wrapper img {
-    width: 100%;
+    width: 70%;
     height: 14rem;
     margin: 0 auto;
     filter: blur(18px);
