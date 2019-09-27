@@ -307,11 +307,11 @@ hr {
 
 @media only screen and (max-width: 2300px) {
     #testimonials-carousel-wrapper {
-        width: 60%;
+        width: 45%;
     }
 
     #testimonials-carousel-wrapper img {
-        width: 65%;
+        width: 70%;
     }
 }
 
@@ -356,7 +356,7 @@ hr {
     }
 
     #testimonials-carousel-wrapper img {
-        height: 22rem;
+        height: 14rem;
     }
 
     #collapse {
