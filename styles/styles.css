@@ -270,7 +270,7 @@ hr {
 }
 
 .testimonial-quote p {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .site-headline {
@@ -307,11 +307,11 @@ hr {
 
 @media only screen and (max-width: 2300px) {
     #testimonials-carousel-wrapper {
-        width: 65%;
+        width: 80%;
     }
 
     #testimonials-carousel-wrapper img {
-        width: 70%;
+        width: 85%;
     }
 }
 
