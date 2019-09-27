@@ -212,7 +212,7 @@ hr {
 }
 
 #carousel {
-    width: 100%;
+    width: 50%;
     margin-bottom: 2%;
 }
 
@@ -240,15 +240,13 @@ hr {
 #what-is-this_timelines-desktop { display: block; }
 
 #testimonials-carousel-wrapper {
-/*    width: 45%; */
-    width: 35%;
+    width: 45%;
     margin: 0 auto;
     margin-top: 0px;
 }
 
 #testimonials-carousel-wrapper img {
-/*    width: 85%; */
-    width: 65%;
+    width: 85%;
     height: 25rem;
     margin: 0 auto;
     filter: blur(18px);
