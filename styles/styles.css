@@ -2,8 +2,8 @@ p {
     text-align: left;
 }
 
-.collapse-buttons p {
-    align: center;
+#collapse-buttons p {
+    text-align: center;
 }
 
 .about-row {
