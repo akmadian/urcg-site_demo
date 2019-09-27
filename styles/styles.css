@@ -212,7 +212,7 @@ hr {
 }
 
 #carousel {
-    width: 50%;
+    width: 100%;
     margin-bottom: 2%;
 }
 
@@ -307,11 +307,11 @@ hr {
 
 @media only screen and (max-width: 2300px) {
     #testimonials-carousel-wrapper {
-        width: 80%;
+        width: 60%;
     }
 
     #testimonials-carousel-wrapper img {
-        width: 85%;
+        width: 65%;
     }
 }
 
