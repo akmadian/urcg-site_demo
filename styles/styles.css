@@ -246,8 +246,8 @@ hr {
 }
 
 #testimonials-carousel-wrapper img {
-    width: 85%;
-    height: 25rem;
+    width: 70%;
+    height: 14rem;
     margin: 0 auto;
     filter: blur(18px);
     -webkit-filter: blur(18px);
@@ -270,7 +270,7 @@ hr {
 }
 
 .testimonial-quote p {
-    font-size: 26px;
+    font-size: 22px;
 }
 
 .site-headline {
