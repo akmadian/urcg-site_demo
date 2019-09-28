@@ -46,6 +46,7 @@ footer hr {
 .footer-social-link div {
     margin: .5rem 0rem;
     margin-bottom: 1rem;
+    padding: 10px;
 }
 
 .footer-dev-credit {
