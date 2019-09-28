@@ -34,17 +34,17 @@ footer hr {
 
 .footer-social-link img {
     width: 20px;
-    vertical-align: middle;
+    vertical-align: left;
 }
 
 .footer-social-link a {
-    vertical-align: middle;
+    vertical-align: left;
     display: inline;
-    padding: .5rem 1rem;
+    padding: .5rem 0rem;
 }
 
 .footer-social-link div {
-    margin: .5rem 1rem;
+    margin: .5rem 0rem;
     margin-bottom: 1rem;
 }
 
