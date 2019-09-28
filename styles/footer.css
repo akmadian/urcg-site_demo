@@ -9,6 +9,10 @@ footer {
     overflow: hidden;
 }
 
+p {
+    text-align: left;
+}
+
 footer hr {
     width: 100%;
     color: #eee;
@@ -39,7 +43,7 @@ footer hr {
 }
 
 .footer-social-link div {
-    margin: .5rem 1rem;
+    margin: .5rem 0rem;
     margin-bottom: 1rem;
 }
 
