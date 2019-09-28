@@ -59,12 +59,15 @@ footer hr {
 footer .row.no-gutters {
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-right: 10px;
 }
 
 footer .col-6.col-md-12 {
     margin-bottom: 2.4%;
     text-align: left;
+}
+
+footer .col-lg-3 {
+    padding-right: 10px;
 }
 
 .cc-license a {
