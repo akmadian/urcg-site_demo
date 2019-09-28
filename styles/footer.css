@@ -9,8 +9,8 @@ footer {
     overflow: hidden;
 }
 
-p {
-    text-align: left;
+footer p {
+    text-align: center;
 }
 
 footer hr {
