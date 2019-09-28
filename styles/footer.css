@@ -59,6 +59,7 @@ footer hr {
 footer .row.no-gutters {
     margin-top: 0px;
     margin-bottom: 0px;
+    padding-right: 10px;
 }
 
 footer .col-6.col-md-12 {
