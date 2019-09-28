@@ -1,3 +1,7 @@
+.col-lg-3 {
+    padding-right: 10px;
+}
+
 footer {
     background-color: #b6e0c6;
     padding: 1.5% 4% 0% 4%;
@@ -46,7 +50,6 @@ footer hr {
 .footer-social-link div {
     margin: .5rem 0rem;
     margin-bottom: 1rem;
-    padding: 10px;
 }
 
 .footer-dev-credit {
@@ -65,7 +68,6 @@ footer .row.no-gutters {
 footer .col-6.col-md-12 {
     margin-bottom: 2.4%;
     text-align: left;
-    padding-right: 5px;
 }
 
 .cc-license a {
