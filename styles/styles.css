@@ -278,6 +278,11 @@ hr {
     text-align: center;
 }
 
+#get-button {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
 #dear-educator {
     margin: 0 5%;
     margin-bottom: 3rem;
